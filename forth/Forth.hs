@@ -54,7 +54,7 @@ eval ("/":xs) (a:b:ys) m = eval xs (b`div`a:ys) m
 eval (":":name:xs) s m = if valid name then addName (name:xs) s m else Left InvalidWord
 eval (n:xs) s m | isNum n = eval xs ((read n :: Int) :s) m
 eval (op:_) _ m | op `M.notMember` m = Left $ UnknownWord (T.pack op)
-eval _ _ _ = error "Bad thing is happening wright now!"
+eval _ _ _ = error "Bad thing is happening right now!"
 
 addName :: [String] -> [Int] -> M.Map String [String] -> Either ForthError ForthState
 addName (n:xs) s m = let (body, _:rest) = break (==";") xs
