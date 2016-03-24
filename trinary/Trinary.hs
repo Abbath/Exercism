@@ -1,7 +1,7 @@
 {-# LANGUAGE BangPatterns #-}
 module Trinary where
 
-import qualified Data.Map as M
+import Data.Char
 
 foldl' :: (b -> a -> b) -> b -> [a] -> b
 foldl' _ !z [] = z
@@ -14,15 +14,18 @@ showTri :: (Integral a) => a -> String
 showTri n = reverse . s $ n 
     where 
         s 0 = []
-        s m = chars M.! (m `mod` 3) : s (m `div` 3)
+        s m = fromDigit (m `mod` 3) : s (m `div` 3)
 
-digits :: (Integral a) =>  M.Map Char a 
-digits = M.fromList [('0', 0),('1', 1),('2', 2)]
-
-chars :: (Integral a) => M.Map a Char 
-chars = M.fromList [(0, '0'),(1, '1'),(2, '2')]
+toDigit :: Integral a => Char -> Maybe a
+toDigit c = let t = ord c - ord '0' 
+            in if t >= 0 && t <= 2 
+                  then Just $ fromIntegral t 
+                  else Nothing 
+                
+fromDigit :: Integral a => a -> Char
+fromDigit n = chr (fromIntegral n + ord '0')
 
 convert :: (Integral a) => a -> Char -> a
-convert n d = case M.lookup d digits of
+convert n d = case toDigit d of
                    Just x ->  n*3+x 
                    Nothing -> 0

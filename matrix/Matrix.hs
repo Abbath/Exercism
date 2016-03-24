@@ -13,7 +13,7 @@ shape :: Matrix a -> (Int, Int)
 shape (Matrix r c _) = if (r,c) == (1,0) then (0,0) else (r, c)
 
 row :: Int -> Matrix a -> Vector a
-row n (Matrix r c v) = V.slice (n*c) c v
+row n (Matrix _ c v) = V.slice (n*c) c v
 
 rows :: Matrix a -> Int
 rows (Matrix r _ _) = r
@@ -25,12 +25,15 @@ column :: Int -> Matrix a -> Vector a
 column n (Matrix r c v) = V.generate r (\x -> v V.! (x*c+n)) 
 
 transpose :: Matrix a -> Matrix a
-transpose mm = Matrix (cols mm) (rows mm) $ V.foldr (V.++) V.empty $ V.generate (cols mm) (\x -> column x mm)
+transpose mm = Matrix (cols mm) (rows mm) 
+    $ V.foldr (V.++) V.empty 
+    $ V.generate (cols mm) (`column` mm)
 
 flatten :: Matrix a -> Vector a
 flatten (Matrix _ _ v) = v
  
 fromList :: [[a]] -> Matrix a
+fromList [] = Matrix 0 0 V.empty
 fromList l = Matrix (length l) (length $ l !! 0) (V.fromList . concat $ l)
 
 reshape :: (Int, Int) -> Matrix a -> Matrix a

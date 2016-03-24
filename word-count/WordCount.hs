@@ -11,5 +11,5 @@ wordCount = M.fromList .
     sort .
     words .
     map toLower .
-    map (\c -> if c == '_' || isPunctuation c then ' ' else c ) .
-    filter (\c -> c == '_' || isAlphaNum c || isSpace c || isPunctuation c)
+    filter (\c -> isAlphaNum c || isSpace c) .
+    map (\c -> if c == '_' || isPunctuation c then ' ' else c) 

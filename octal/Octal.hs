@@ -1,7 +1,7 @@
 {-# LANGUAGE BangPatterns #-}
 module Octal where
 
-import qualified Data.Map as M
+import Data.Char
 
 foldl' :: (b -> a -> b) -> b -> [a] -> b
 foldl' _ !z [] = z
@@ -14,15 +14,18 @@ showOct :: (Integral a) => a -> String
 showOct n = reverse . s $ n 
     where 
         s 0 = []
-        s m = chars M.! (m `mod` 8) : s (m `div` 8)
+        s m = fromDigit (m `mod` 8) : s (m `div` 8)
 
-digits :: (Integral a) =>  M.Map Char a 
-digits = M.fromList [('0', 0),('1', 1),('2', 2),('3', 3),('4', 4),('5', 5),('6', 6),('7', 7)]
-
-chars :: (Integral a) => M.Map a Char 
-chars = M.fromList [(0, '0'),(1, '1'),(2, '2'),(3, '3'),(4, '4'),(5, '5'),(6, '6'),(7, '7')]
+toDigit :: Integral a => Char -> Maybe a
+toDigit c = let t = ord c - ord '0' 
+            in if t >= 0 && t <= 7 
+                  then Just $ fromIntegral t 
+                  else Nothing 
+                
+fromDigit :: Integral a => a -> Char
+fromDigit n = chr (fromIntegral n + ord '0')
 
 convert :: (Integral a) => a -> Char -> a
-convert n d = case M.lookup d digits of
+convert n d = case toDigit d of
                    Just x ->  n*8+x 
                    Nothing -> 0

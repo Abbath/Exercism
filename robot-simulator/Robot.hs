@@ -1,5 +1,7 @@
 module Robot where
 
+import Data.List
+
 data Bearing = East | South | West | North deriving (Show, Eq) 
 
 type Robot = (Bearing, (Int, Int))
@@ -36,5 +38,5 @@ charToAction (b,(x,y)) 'A' = case b of
 charToAction _ _ = error "Wrong command!"
 
 simulate :: Robot -> String -> Robot
-simulate = foldl charToAction
+simulate = foldl' charToAction
               

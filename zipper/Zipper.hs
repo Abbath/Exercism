@@ -38,7 +38,7 @@ toTree :: Zipper a -> BinTree a
 --toTree (Zipper t []) = t
 toTree z@(Zipper t _) = case up z of
                 Nothing -> t
-                Just w -> toTree $ w 
+                Just w -> toTree w 
                               
 -- | Get the value of the focus node.
 value :: Zipper a -> a
