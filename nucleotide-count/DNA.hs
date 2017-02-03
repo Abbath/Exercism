@@ -16,4 +16,4 @@ validate s = let a = filter isNotOk s
                    else error $ "invalid nucleotide '"++[head a]++"'"
                   
 nucleotideCounts :: String -> M.Map Char Int                  
-nucleotideCounts s = validate s `seq` M.fromList $ map (\c -> (c, count c s)) "AGTC"
+nucleotideCounts s = let vs = validate s in vs `seq` M.fromList $ map (\c -> (c, count c vs)) "AGTC"

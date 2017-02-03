@@ -1,0 +1,2947 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-01 13:11:14.604228 UTC
+
+interface zebra-puzzle-0.0.0-2NbjAiZgJwQ3q8AZNMl562:ZebraPuzzle 8001
+  interface hash: 0cc7b49f4222b4415cfe5f4ad6e3ebb3
+  ABI hash: eec4497bc845fee57873b22701fc8f00
+  export-list hash: 5788e07621485d433d71d6f9394943e5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ZebraPuzzle.solve
+  ZebraPuzzle.Resident{ZebraPuzzle.Englishman ZebraPuzzle.Japanese ZebraPuzzle.Norwegian ZebraPuzzle.Spaniard ZebraPuzzle.Ukrainian}
+  ZebraPuzzle.Solution{ZebraPuzzle.Solution waterDrinker zebraOwner}
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Control.Monad 7767aebfd53f0b584cef2fe66ad3986c
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Enum fdf7ac3e1b0be0a4a37257601bddad14
+import  -/  base-4.9.0.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+4043863a998a3af8937a68f65f8a4606
+  $fBoundedAnimal :: GHC.Enum.Bounded ZebraPuzzle.Animal
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Animal ZebraPuzzle.Dog ZebraPuzzle.Snails -}
+a043ebad7342fe911155b4dac6781b18
+  $fBoundedColor :: GHC.Enum.Bounded ZebraPuzzle.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Color ZebraPuzzle.Red ZebraPuzzle.Yellow -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fBoundedDrink :: GHC.Enum.Bounded ZebraPuzzle.Drink
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Drink ZebraPuzzle.Coffee ZebraPuzzle.Water -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fBoundedResident :: GHC.Enum.Bounded ZebraPuzzle.Resident
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Resident
+                  ZebraPuzzle.Englishman
+                  ZebraPuzzle.Japanese -}
+1aec11b270a46392e4307166157e1161
+  $fBoundedSmoke :: GHC.Enum.Bounded ZebraPuzzle.Smoke
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Smoke ZebraPuzzle.OldGold ZebraPuzzle.Parliaments -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal :: GHC.Enum.Enum ZebraPuzzle.Animal
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Animal
+                  ZebraPuzzle.$fEnumAnimal_$csucc
+                  ZebraPuzzle.$fEnumAnimal_$cpred
+                  ZebraPuzzle.$fEnumAnimal_$ctoEnum
+                  ZebraPuzzle.$fEnumAnimal_$cfromEnum
+                  ZebraPuzzle.$fEnumAnimal_$cenumFrom
+                  ZebraPuzzle.$fEnumAnimal_$cenumFromThen
+                  ZebraPuzzle.$fEnumAnimal_$cenumFromTo
+                  ZebraPuzzle.$fEnumAnimal_$cenumFromThenTo -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal1 :: [ZebraPuzzle.Animal]
+  {- Unfolding: (ZebraPuzzle.$fEnumAnimal_go5 4#) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal2 :: [ZebraPuzzle.Animal]
+  {- Unfolding: (ZebraPuzzle.$fEnumAnimal_go6 3#) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal3 :: [ZebraPuzzle.Animal]
+  {- Unfolding: (ZebraPuzzle.$fEnumAnimal_go7 2#) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal4 :: [ZebraPuzzle.Animal]
+  {- Unfolding: (ZebraPuzzle.$fEnumAnimal_go8 1#) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal5 :: [ZebraPuzzle.Animal]
+  {- Unfolding: (ZebraPuzzle.$fEnumAnimal_go9 0#) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal6 :: GHC.Prim.Int# -> ZebraPuzzle.Animal
+  {- Arity: 1, Strictness: <L,U>x -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal7 :: ZebraPuzzle.Animal
+  {- Strictness: x -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal8 :: ZebraPuzzle.Animal
+  {- Strictness: x -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$cenumFrom ::
+    ZebraPuzzle.Animal -> [ZebraPuzzle.Animal]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Animal) ->
+                 case a of wild {
+                   ZebraPuzzle.Dog -> ZebraPuzzle.$fEnumAnimal5
+                   ZebraPuzzle.Fox -> ZebraPuzzle.$fEnumAnimal4
+                   ZebraPuzzle.Horse -> ZebraPuzzle.$fEnumAnimal3
+                   ZebraPuzzle.Zebra -> ZebraPuzzle.$fEnumAnimal2
+                   ZebraPuzzle.Snails -> ZebraPuzzle.$fEnumAnimal1 }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$cenumFromThen ::
+    ZebraPuzzle.Animal -> ZebraPuzzle.Animal -> [ZebraPuzzle.Animal]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Animal)
+                   (b :: ZebraPuzzle.Animal) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [ZebraPuzzle.Animal]
+                                    ZebraPuzzle.$fEnumAnimal_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Animal)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [ZebraPuzzle.Animal]
+                                    ZebraPuzzle.$fEnumAnimal_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Animal)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 4# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       ZebraPuzzle.Dog -> $j1 0#
+                       ZebraPuzzle.Fox -> $j1 1#
+                       ZebraPuzzle.Horse -> $j1 2#
+                       ZebraPuzzle.Zebra -> $j1 3#
+                       ZebraPuzzle.Snails -> $j1 4# }
+                 } in
+                 case a of wild {
+                   ZebraPuzzle.Dog -> $j 0#
+                   ZebraPuzzle.Fox -> $j 1#
+                   ZebraPuzzle.Horse -> $j 2#
+                   ZebraPuzzle.Zebra -> $j 3#
+                   ZebraPuzzle.Snails -> $j 4# }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$cenumFromThenTo ::
+    ZebraPuzzle.Animal
+    -> ZebraPuzzle.Animal -> ZebraPuzzle.Animal -> [ZebraPuzzle.Animal]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$cenumFromTo ::
+    ZebraPuzzle.Animal -> ZebraPuzzle.Animal -> [ZebraPuzzle.Animal]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: ZebraPuzzle.Animal)
+                   (y :: ZebraPuzzle.Animal) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       ZebraPuzzle.Dog
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumAnimal_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Animal }
+                       ZebraPuzzle.Fox
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumAnimal_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Animal }
+                       ZebraPuzzle.Horse
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumAnimal_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Animal }
+                       ZebraPuzzle.Zebra
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumAnimal_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Animal }
+                       ZebraPuzzle.Snails
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumAnimal_go x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Animal } }
+                 } in
+                 case x of wild {
+                   ZebraPuzzle.Dog -> $j 0#
+                   ZebraPuzzle.Fox -> $j 1#
+                   ZebraPuzzle.Horse -> $j 2#
+                   ZebraPuzzle.Zebra -> $j 3#
+                   ZebraPuzzle.Snails -> $j 4# }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$cfromEnum :: ZebraPuzzle.Animal -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ZebraPuzzle.Animal) ->
+                 case w of wild {
+                   ZebraPuzzle.Dog -> GHC.Types.I# 0#
+                   ZebraPuzzle.Fox -> GHC.Types.I# 1#
+                   ZebraPuzzle.Horse -> GHC.Types.I# 2#
+                   ZebraPuzzle.Zebra -> GHC.Types.I# 3#
+                   ZebraPuzzle.Snails -> GHC.Types.I# 4# }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$cpred :: ZebraPuzzle.Animal -> ZebraPuzzle.Animal
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Animal) ->
+                 case a of wild {
+                   ZebraPuzzle.Dog -> ZebraPuzzle.$fEnumAnimal7
+                   ZebraPuzzle.Fox -> ZebraPuzzle.Dog
+                   ZebraPuzzle.Horse -> ZebraPuzzle.Fox
+                   ZebraPuzzle.Zebra -> ZebraPuzzle.Horse
+                   ZebraPuzzle.Snails -> ZebraPuzzle.Zebra }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$csucc :: ZebraPuzzle.Animal -> ZebraPuzzle.Animal
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Animal) ->
+                 case a of wild {
+                   ZebraPuzzle.Dog -> ZebraPuzzle.Fox
+                   ZebraPuzzle.Fox -> ZebraPuzzle.Horse
+                   ZebraPuzzle.Horse -> ZebraPuzzle.Zebra
+                   ZebraPuzzle.Zebra -> ZebraPuzzle.Snails
+                   ZebraPuzzle.Snails -> ZebraPuzzle.$fEnumAnimal8 }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_$ctoEnum :: GHC.Types.Int -> ZebraPuzzle.Animal
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> ZebraPuzzle.$w$ctoEnum ww1 }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_c ::
+    GHC.Types.Int -> [ZebraPuzzle.Animal] -> [ZebraPuzzle.Animal]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [ZebraPuzzle.Animal]) ->
+                 GHC.Types.:
+                   @ ZebraPuzzle.Animal
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ ZebraPuzzle.Animal a })
+                   ys) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go1 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go2 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go3 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go4 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go5 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go6 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go7 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go8 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEnumAnimal_go9 :: GHC.Prim.Int# -> [ZebraPuzzle.Animal]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor :: GHC.Enum.Enum ZebraPuzzle.Color
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Color
+                  ZebraPuzzle.$fEnumColor_$csucc
+                  ZebraPuzzle.$fEnumColor_$cpred
+                  ZebraPuzzle.$fEnumColor_$ctoEnum
+                  ZebraPuzzle.$fEnumColor_$cfromEnum
+                  ZebraPuzzle.$fEnumColor_$cenumFrom
+                  ZebraPuzzle.$fEnumColor_$cenumFromThen
+                  ZebraPuzzle.$fEnumColor_$cenumFromTo
+                  ZebraPuzzle.$fEnumColor_$cenumFromThenTo -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor1 :: [ZebraPuzzle.Color]
+  {- Unfolding: (ZebraPuzzle.$fEnumColor_go5 4#) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor2 :: [ZebraPuzzle.Color]
+  {- Unfolding: (ZebraPuzzle.$fEnumColor_go6 3#) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor3 :: [ZebraPuzzle.Color]
+  {- Unfolding: (ZebraPuzzle.$fEnumColor_go7 2#) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor4 :: [ZebraPuzzle.Color]
+  {- Unfolding: (ZebraPuzzle.$fEnumColor_go8 1#) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor5 :: [ZebraPuzzle.Color]
+  {- Unfolding: (ZebraPuzzle.$fEnumColor_go9 0#) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor6 :: GHC.Prim.Int# -> ZebraPuzzle.Color
+  {- Arity: 1, Strictness: <L,U>x -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor7 :: ZebraPuzzle.Color
+  {- Strictness: x -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor8 :: ZebraPuzzle.Color
+  {- Strictness: x -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$cenumFrom :: ZebraPuzzle.Color -> [ZebraPuzzle.Color]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Color) ->
+                 case a of wild {
+                   ZebraPuzzle.Red -> ZebraPuzzle.$fEnumColor5
+                   ZebraPuzzle.Green -> ZebraPuzzle.$fEnumColor4
+                   ZebraPuzzle.Ivory -> ZebraPuzzle.$fEnumColor3
+                   ZebraPuzzle.Blue -> ZebraPuzzle.$fEnumColor2
+                   ZebraPuzzle.Yellow -> ZebraPuzzle.$fEnumColor1 }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$cenumFromThen ::
+    ZebraPuzzle.Color -> ZebraPuzzle.Color -> [ZebraPuzzle.Color]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Color) (b :: ZebraPuzzle.Color) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [ZebraPuzzle.Color]
+                                    ZebraPuzzle.$fEnumColor_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Color)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [ZebraPuzzle.Color]
+                                    ZebraPuzzle.$fEnumColor_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Color)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 4# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       ZebraPuzzle.Red -> $j1 0#
+                       ZebraPuzzle.Green -> $j1 1#
+                       ZebraPuzzle.Ivory -> $j1 2#
+                       ZebraPuzzle.Blue -> $j1 3#
+                       ZebraPuzzle.Yellow -> $j1 4# }
+                 } in
+                 case a of wild {
+                   ZebraPuzzle.Red -> $j 0#
+                   ZebraPuzzle.Green -> $j 1#
+                   ZebraPuzzle.Ivory -> $j 2#
+                   ZebraPuzzle.Blue -> $j 3#
+                   ZebraPuzzle.Yellow -> $j 4# }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$cenumFromThenTo ::
+    ZebraPuzzle.Color
+    -> ZebraPuzzle.Color -> ZebraPuzzle.Color -> [ZebraPuzzle.Color]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$cenumFromTo ::
+    ZebraPuzzle.Color -> ZebraPuzzle.Color -> [ZebraPuzzle.Color]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: ZebraPuzzle.Color) (y :: ZebraPuzzle.Color) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       ZebraPuzzle.Red
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumColor_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Color }
+                       ZebraPuzzle.Green
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumColor_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Color }
+                       ZebraPuzzle.Ivory
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumColor_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Color }
+                       ZebraPuzzle.Blue
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumColor_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Color }
+                       ZebraPuzzle.Yellow
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumColor_go x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Color } }
+                 } in
+                 case x of wild {
+                   ZebraPuzzle.Red -> $j 0#
+                   ZebraPuzzle.Green -> $j 1#
+                   ZebraPuzzle.Ivory -> $j 2#
+                   ZebraPuzzle.Blue -> $j 3#
+                   ZebraPuzzle.Yellow -> $j 4# }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$cfromEnum :: ZebraPuzzle.Color -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ZebraPuzzle.Color) ->
+                 case w of wild {
+                   ZebraPuzzle.Red -> GHC.Types.I# 0#
+                   ZebraPuzzle.Green -> GHC.Types.I# 1#
+                   ZebraPuzzle.Ivory -> GHC.Types.I# 2#
+                   ZebraPuzzle.Blue -> GHC.Types.I# 3#
+                   ZebraPuzzle.Yellow -> GHC.Types.I# 4# }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$cpred :: ZebraPuzzle.Color -> ZebraPuzzle.Color
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Color) ->
+                 case a of wild {
+                   ZebraPuzzle.Red -> ZebraPuzzle.$fEnumColor7
+                   ZebraPuzzle.Green -> ZebraPuzzle.Red
+                   ZebraPuzzle.Ivory -> ZebraPuzzle.Green
+                   ZebraPuzzle.Blue -> ZebraPuzzle.Ivory
+                   ZebraPuzzle.Yellow -> ZebraPuzzle.Blue }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$csucc :: ZebraPuzzle.Color -> ZebraPuzzle.Color
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Color) ->
+                 case a of wild {
+                   ZebraPuzzle.Red -> ZebraPuzzle.Green
+                   ZebraPuzzle.Green -> ZebraPuzzle.Ivory
+                   ZebraPuzzle.Ivory -> ZebraPuzzle.Blue
+                   ZebraPuzzle.Blue -> ZebraPuzzle.Yellow
+                   ZebraPuzzle.Yellow -> ZebraPuzzle.$fEnumColor8 }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_$ctoEnum :: GHC.Types.Int -> ZebraPuzzle.Color
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ZebraPuzzle.$w$ctoEnum1 ww1 }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_c ::
+    GHC.Types.Int -> [ZebraPuzzle.Color] -> [ZebraPuzzle.Color]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [ZebraPuzzle.Color]) ->
+                 GHC.Types.:
+                   @ ZebraPuzzle.Color
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ ZebraPuzzle.Color a })
+                   ys) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go1 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go2 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go3 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go4 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go5 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go6 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go7 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go8 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+a043ebad7342fe911155b4dac6781b18
+  $fEnumColor_go9 :: GHC.Prim.Int# -> [ZebraPuzzle.Color]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink :: GHC.Enum.Enum ZebraPuzzle.Drink
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Drink
+                  ZebraPuzzle.$fEnumDrink_$csucc
+                  ZebraPuzzle.$fEnumDrink_$cpred
+                  ZebraPuzzle.$fEnumDrink_$ctoEnum
+                  ZebraPuzzle.$fEnumDrink_$cfromEnum
+                  ZebraPuzzle.$fEnumDrink_$cenumFrom
+                  ZebraPuzzle.$fEnumDrink_$cenumFromThen
+                  ZebraPuzzle.$fEnumDrink_$cenumFromTo
+                  ZebraPuzzle.$fEnumDrink_$cenumFromThenTo -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink1 :: [ZebraPuzzle.Drink]
+  {- Unfolding: (ZebraPuzzle.$fEnumDrink_go5 4#) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink2 :: [ZebraPuzzle.Drink]
+  {- Unfolding: (ZebraPuzzle.$fEnumDrink_go6 3#) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink3 :: [ZebraPuzzle.Drink]
+  {- Unfolding: (ZebraPuzzle.$fEnumDrink_go7 2#) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink4 :: [ZebraPuzzle.Drink]
+  {- Unfolding: (ZebraPuzzle.$fEnumDrink_go8 1#) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink5 :: [ZebraPuzzle.Drink]
+  {- Unfolding: (ZebraPuzzle.$fEnumDrink_go9 0#) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink6 :: GHC.Prim.Int# -> ZebraPuzzle.Drink
+  {- Arity: 1, Strictness: <L,U>x -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink7 :: ZebraPuzzle.Drink
+  {- Strictness: x -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink8 :: ZebraPuzzle.Drink
+  {- Strictness: x -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$cenumFrom :: ZebraPuzzle.Drink -> [ZebraPuzzle.Drink]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Drink) ->
+                 case a of wild {
+                   ZebraPuzzle.Coffee -> ZebraPuzzle.$fEnumDrink5
+                   ZebraPuzzle.Tea -> ZebraPuzzle.$fEnumDrink4
+                   ZebraPuzzle.Milk -> ZebraPuzzle.$fEnumDrink3
+                   ZebraPuzzle.Juice -> ZebraPuzzle.$fEnumDrink2
+                   ZebraPuzzle.Water -> ZebraPuzzle.$fEnumDrink1 }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$cenumFromThen ::
+    ZebraPuzzle.Drink -> ZebraPuzzle.Drink -> [ZebraPuzzle.Drink]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Drink) (b :: ZebraPuzzle.Drink) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [ZebraPuzzle.Drink]
+                                    ZebraPuzzle.$fEnumDrink_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Drink)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [ZebraPuzzle.Drink]
+                                    ZebraPuzzle.$fEnumDrink_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Drink)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 4# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       ZebraPuzzle.Coffee -> $j1 0#
+                       ZebraPuzzle.Tea -> $j1 1#
+                       ZebraPuzzle.Milk -> $j1 2#
+                       ZebraPuzzle.Juice -> $j1 3#
+                       ZebraPuzzle.Water -> $j1 4# }
+                 } in
+                 case a of wild {
+                   ZebraPuzzle.Coffee -> $j 0#
+                   ZebraPuzzle.Tea -> $j 1#
+                   ZebraPuzzle.Milk -> $j 2#
+                   ZebraPuzzle.Juice -> $j 3#
+                   ZebraPuzzle.Water -> $j 4# }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$cenumFromThenTo ::
+    ZebraPuzzle.Drink
+    -> ZebraPuzzle.Drink -> ZebraPuzzle.Drink -> [ZebraPuzzle.Drink]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$cenumFromTo ::
+    ZebraPuzzle.Drink -> ZebraPuzzle.Drink -> [ZebraPuzzle.Drink]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: ZebraPuzzle.Drink) (y :: ZebraPuzzle.Drink) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       ZebraPuzzle.Coffee
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumDrink_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Drink }
+                       ZebraPuzzle.Tea
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumDrink_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Drink }
+                       ZebraPuzzle.Milk
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumDrink_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Drink }
+                       ZebraPuzzle.Juice
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumDrink_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Drink }
+                       ZebraPuzzle.Water
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumDrink_go x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Drink } }
+                 } in
+                 case x of wild {
+                   ZebraPuzzle.Coffee -> $j 0#
+                   ZebraPuzzle.Tea -> $j 1#
+                   ZebraPuzzle.Milk -> $j 2#
+                   ZebraPuzzle.Juice -> $j 3#
+                   ZebraPuzzle.Water -> $j 4# }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$cfromEnum :: ZebraPuzzle.Drink -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ZebraPuzzle.Drink) ->
+                 case w of wild {
+                   ZebraPuzzle.Coffee -> GHC.Types.I# 0#
+                   ZebraPuzzle.Tea -> GHC.Types.I# 1#
+                   ZebraPuzzle.Milk -> GHC.Types.I# 2#
+                   ZebraPuzzle.Juice -> GHC.Types.I# 3#
+                   ZebraPuzzle.Water -> GHC.Types.I# 4# }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$cpred :: ZebraPuzzle.Drink -> ZebraPuzzle.Drink
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Drink) ->
+                 case a of wild {
+                   ZebraPuzzle.Coffee -> ZebraPuzzle.$fEnumDrink7
+                   ZebraPuzzle.Tea -> ZebraPuzzle.Coffee
+                   ZebraPuzzle.Milk -> ZebraPuzzle.Tea
+                   ZebraPuzzle.Juice -> ZebraPuzzle.Milk
+                   ZebraPuzzle.Water -> ZebraPuzzle.Juice }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$csucc :: ZebraPuzzle.Drink -> ZebraPuzzle.Drink
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Drink) ->
+                 case a of wild {
+                   ZebraPuzzle.Coffee -> ZebraPuzzle.Tea
+                   ZebraPuzzle.Tea -> ZebraPuzzle.Milk
+                   ZebraPuzzle.Milk -> ZebraPuzzle.Juice
+                   ZebraPuzzle.Juice -> ZebraPuzzle.Water
+                   ZebraPuzzle.Water -> ZebraPuzzle.$fEnumDrink8 }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_$ctoEnum :: GHC.Types.Int -> ZebraPuzzle.Drink
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ZebraPuzzle.$w$ctoEnum2 ww1 }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_c ::
+    GHC.Types.Int -> [ZebraPuzzle.Drink] -> [ZebraPuzzle.Drink]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [ZebraPuzzle.Drink]) ->
+                 GHC.Types.:
+                   @ ZebraPuzzle.Drink
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ ZebraPuzzle.Drink a })
+                   ys) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go1 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go2 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go3 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go4 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go5 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go6 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go7 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go8 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEnumDrink_go9 :: GHC.Prim.Int# -> [ZebraPuzzle.Drink]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident :: GHC.Enum.Enum ZebraPuzzle.Resident
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Resident
+                  ZebraPuzzle.$fEnumResident_$csucc
+                  ZebraPuzzle.$fEnumResident_$cpred
+                  ZebraPuzzle.$fEnumResident_$ctoEnum
+                  ZebraPuzzle.$fEnumResident_$cfromEnum
+                  ZebraPuzzle.$fEnumResident_$cenumFrom
+                  ZebraPuzzle.$fEnumResident_$cenumFromThen
+                  ZebraPuzzle.$fEnumResident_$cenumFromTo
+                  ZebraPuzzle.$fEnumResident_$cenumFromThenTo -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident1 :: [ZebraPuzzle.Resident]
+  {- Unfolding: (ZebraPuzzle.$fEnumResident_go5 4#) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident2 :: [ZebraPuzzle.Resident]
+  {- Unfolding: (ZebraPuzzle.$fEnumResident_go6 3#) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident3 :: [ZebraPuzzle.Resident]
+  {- Unfolding: (ZebraPuzzle.$fEnumResident_go7 2#) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident4 :: [ZebraPuzzle.Resident]
+  {- Unfolding: (ZebraPuzzle.$fEnumResident_go8 1#) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident5 :: [ZebraPuzzle.Resident]
+  {- Unfolding: (ZebraPuzzle.$fEnumResident_go9 0#) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident6 :: GHC.Prim.Int# -> ZebraPuzzle.Resident
+  {- Arity: 1, Strictness: <L,U>x -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident7 :: ZebraPuzzle.Resident
+  {- Strictness: x -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident8 :: ZebraPuzzle.Resident
+  {- Strictness: x -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$cenumFrom ::
+    ZebraPuzzle.Resident -> [ZebraPuzzle.Resident]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Resident) ->
+                 case a of wild {
+                   ZebraPuzzle.Englishman -> ZebraPuzzle.$fEnumResident5
+                   ZebraPuzzle.Spaniard -> ZebraPuzzle.$fEnumResident4
+                   ZebraPuzzle.Ukrainian -> ZebraPuzzle.$fEnumResident3
+                   ZebraPuzzle.Norwegian -> ZebraPuzzle.$fEnumResident2
+                   ZebraPuzzle.Japanese -> ZebraPuzzle.$fEnumResident1 }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$cenumFromThen ::
+    ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident -> [ZebraPuzzle.Resident]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Resident)
+                   (b :: ZebraPuzzle.Resident) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [ZebraPuzzle.Resident]
+                                    ZebraPuzzle.$fEnumResident_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Resident)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [ZebraPuzzle.Resident]
+                                    ZebraPuzzle.$fEnumResident_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Resident)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 4# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       ZebraPuzzle.Englishman -> $j1 0#
+                       ZebraPuzzle.Spaniard -> $j1 1#
+                       ZebraPuzzle.Ukrainian -> $j1 2#
+                       ZebraPuzzle.Norwegian -> $j1 3#
+                       ZebraPuzzle.Japanese -> $j1 4# }
+                 } in
+                 case a of wild {
+                   ZebraPuzzle.Englishman -> $j 0#
+                   ZebraPuzzle.Spaniard -> $j 1#
+                   ZebraPuzzle.Ukrainian -> $j 2#
+                   ZebraPuzzle.Norwegian -> $j 3#
+                   ZebraPuzzle.Japanese -> $j 4# }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$cenumFromThenTo ::
+    ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident
+    -> [ZebraPuzzle.Resident]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$cenumFromTo ::
+    ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident -> [ZebraPuzzle.Resident]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: ZebraPuzzle.Resident)
+                   (y :: ZebraPuzzle.Resident) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       ZebraPuzzle.Englishman
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumResident_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Resident }
+                       ZebraPuzzle.Spaniard
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumResident_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Resident }
+                       ZebraPuzzle.Ukrainian
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumResident_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Resident }
+                       ZebraPuzzle.Norwegian
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumResident_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Resident }
+                       ZebraPuzzle.Japanese
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumResident_go x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Resident } }
+                 } in
+                 case x of wild {
+                   ZebraPuzzle.Englishman -> $j 0#
+                   ZebraPuzzle.Spaniard -> $j 1#
+                   ZebraPuzzle.Ukrainian -> $j 2#
+                   ZebraPuzzle.Norwegian -> $j 3#
+                   ZebraPuzzle.Japanese -> $j 4# }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$cfromEnum :: ZebraPuzzle.Resident -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ZebraPuzzle.Resident) ->
+                 case w of wild {
+                   ZebraPuzzle.Englishman -> GHC.Types.I# 0#
+                   ZebraPuzzle.Spaniard -> GHC.Types.I# 1#
+                   ZebraPuzzle.Ukrainian -> GHC.Types.I# 2#
+                   ZebraPuzzle.Norwegian -> GHC.Types.I# 3#
+                   ZebraPuzzle.Japanese -> GHC.Types.I# 4# }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$cpred ::
+    ZebraPuzzle.Resident -> ZebraPuzzle.Resident
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Resident) ->
+                 case a of wild {
+                   ZebraPuzzle.Englishman -> ZebraPuzzle.$fEnumResident7
+                   ZebraPuzzle.Spaniard -> ZebraPuzzle.Englishman
+                   ZebraPuzzle.Ukrainian -> ZebraPuzzle.Spaniard
+                   ZebraPuzzle.Norwegian -> ZebraPuzzle.Ukrainian
+                   ZebraPuzzle.Japanese -> ZebraPuzzle.Norwegian }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$csucc ::
+    ZebraPuzzle.Resident -> ZebraPuzzle.Resident
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Resident) ->
+                 case a of wild {
+                   ZebraPuzzle.Englishman -> ZebraPuzzle.Spaniard
+                   ZebraPuzzle.Spaniard -> ZebraPuzzle.Ukrainian
+                   ZebraPuzzle.Ukrainian -> ZebraPuzzle.Norwegian
+                   ZebraPuzzle.Norwegian -> ZebraPuzzle.Japanese
+                   ZebraPuzzle.Japanese -> ZebraPuzzle.$fEnumResident8 }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_$ctoEnum :: GHC.Types.Int -> ZebraPuzzle.Resident
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ZebraPuzzle.$w$ctoEnum3 ww1 }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_c ::
+    GHC.Types.Int -> [ZebraPuzzle.Resident] -> [ZebraPuzzle.Resident]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [ZebraPuzzle.Resident]) ->
+                 GHC.Types.:
+                   @ ZebraPuzzle.Resident
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ ZebraPuzzle.Resident a })
+                   ys) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go1 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go2 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go3 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go4 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go5 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go6 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go7 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go8 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEnumResident_go9 :: GHC.Prim.Int# -> [ZebraPuzzle.Resident]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke :: GHC.Enum.Enum ZebraPuzzle.Smoke
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Smoke
+                  ZebraPuzzle.$fEnumSmoke_$csucc
+                  ZebraPuzzle.$fEnumSmoke_$cpred
+                  ZebraPuzzle.$fEnumSmoke_$ctoEnum
+                  ZebraPuzzle.$fEnumSmoke_$cfromEnum
+                  ZebraPuzzle.$fEnumSmoke_$cenumFrom
+                  ZebraPuzzle.$fEnumSmoke_$cenumFromThen
+                  ZebraPuzzle.$fEnumSmoke_$cenumFromTo
+                  ZebraPuzzle.$fEnumSmoke_$cenumFromThenTo -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke1 :: [ZebraPuzzle.Smoke]
+  {- Unfolding: (ZebraPuzzle.$fEnumSmoke_go5 4#) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke2 :: [ZebraPuzzle.Smoke]
+  {- Unfolding: (ZebraPuzzle.$fEnumSmoke_go6 3#) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke3 :: [ZebraPuzzle.Smoke]
+  {- Unfolding: (ZebraPuzzle.$fEnumSmoke_go7 2#) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke4 :: [ZebraPuzzle.Smoke]
+  {- Unfolding: (ZebraPuzzle.$fEnumSmoke_go8 1#) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke5 :: [ZebraPuzzle.Smoke]
+  {- Unfolding: (ZebraPuzzle.$fEnumSmoke_go9 0#) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke6 :: GHC.Prim.Int# -> ZebraPuzzle.Smoke
+  {- Arity: 1, Strictness: <L,U>x -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke7 :: ZebraPuzzle.Smoke
+  {- Strictness: x -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke8 :: ZebraPuzzle.Smoke
+  {- Strictness: x -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$cenumFrom :: ZebraPuzzle.Smoke -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Smoke) ->
+                 case a of wild {
+                   ZebraPuzzle.OldGold -> ZebraPuzzle.$fEnumSmoke5
+                   ZebraPuzzle.Kools -> ZebraPuzzle.$fEnumSmoke4
+                   ZebraPuzzle.LuckyStrike -> ZebraPuzzle.$fEnumSmoke3
+                   ZebraPuzzle.Chesterfields -> ZebraPuzzle.$fEnumSmoke2
+                   ZebraPuzzle.Parliaments -> ZebraPuzzle.$fEnumSmoke1 }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$cenumFromThen ::
+    ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke -> [ZebraPuzzle.Smoke]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Smoke) (b :: ZebraPuzzle.Smoke) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [ZebraPuzzle.Smoke]
+                                    ZebraPuzzle.$fEnumSmoke_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Smoke)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [ZebraPuzzle.Smoke]
+                                    ZebraPuzzle.$fEnumSmoke_c
+                                    (GHC.Types.[] @ ZebraPuzzle.Smoke)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 4# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       ZebraPuzzle.OldGold -> $j1 0#
+                       ZebraPuzzle.Kools -> $j1 1#
+                       ZebraPuzzle.LuckyStrike -> $j1 2#
+                       ZebraPuzzle.Chesterfields -> $j1 3#
+                       ZebraPuzzle.Parliaments -> $j1 4# }
+                 } in
+                 case a of wild {
+                   ZebraPuzzle.OldGold -> $j 0#
+                   ZebraPuzzle.Kools -> $j 1#
+                   ZebraPuzzle.LuckyStrike -> $j 2#
+                   ZebraPuzzle.Chesterfields -> $j 3#
+                   ZebraPuzzle.Parliaments -> $j 4# }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$cenumFromThenTo ::
+    ZebraPuzzle.Smoke
+    -> ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke -> [ZebraPuzzle.Smoke]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$cenumFromTo ::
+    ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke -> [ZebraPuzzle.Smoke]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: ZebraPuzzle.Smoke) (y :: ZebraPuzzle.Smoke) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       ZebraPuzzle.OldGold
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumSmoke_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Smoke }
+                       ZebraPuzzle.Kools
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumSmoke_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Smoke }
+                       ZebraPuzzle.LuckyStrike
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumSmoke_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Smoke }
+                       ZebraPuzzle.Chesterfields
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumSmoke_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Smoke }
+                       ZebraPuzzle.Parliaments
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> ZebraPuzzle.$fEnumSmoke_go x1
+                            GHC.Types.True -> GHC.Types.[] @ ZebraPuzzle.Smoke } }
+                 } in
+                 case x of wild {
+                   ZebraPuzzle.OldGold -> $j 0#
+                   ZebraPuzzle.Kools -> $j 1#
+                   ZebraPuzzle.LuckyStrike -> $j 2#
+                   ZebraPuzzle.Chesterfields -> $j 3#
+                   ZebraPuzzle.Parliaments -> $j 4# }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$cfromEnum :: ZebraPuzzle.Smoke -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ZebraPuzzle.Smoke) ->
+                 case w of wild {
+                   ZebraPuzzle.OldGold -> GHC.Types.I# 0#
+                   ZebraPuzzle.Kools -> GHC.Types.I# 1#
+                   ZebraPuzzle.LuckyStrike -> GHC.Types.I# 2#
+                   ZebraPuzzle.Chesterfields -> GHC.Types.I# 3#
+                   ZebraPuzzle.Parliaments -> GHC.Types.I# 4# }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$cpred :: ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Smoke) ->
+                 case a of wild {
+                   ZebraPuzzle.OldGold -> ZebraPuzzle.$fEnumSmoke7
+                   ZebraPuzzle.Kools -> ZebraPuzzle.OldGold
+                   ZebraPuzzle.LuckyStrike -> ZebraPuzzle.Kools
+                   ZebraPuzzle.Chesterfields -> ZebraPuzzle.LuckyStrike
+                   ZebraPuzzle.Parliaments -> ZebraPuzzle.Chesterfields }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$csucc :: ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: ZebraPuzzle.Smoke) ->
+                 case a of wild {
+                   ZebraPuzzle.OldGold -> ZebraPuzzle.Kools
+                   ZebraPuzzle.Kools -> ZebraPuzzle.LuckyStrike
+                   ZebraPuzzle.LuckyStrike -> ZebraPuzzle.Chesterfields
+                   ZebraPuzzle.Chesterfields -> ZebraPuzzle.Parliaments
+                   ZebraPuzzle.Parliaments -> ZebraPuzzle.$fEnumSmoke8 }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_$ctoEnum :: GHC.Types.Int -> ZebraPuzzle.Smoke
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ZebraPuzzle.$w$ctoEnum4 ww1 }) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_c ::
+    GHC.Types.Int -> [ZebraPuzzle.Smoke] -> [ZebraPuzzle.Smoke]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [ZebraPuzzle.Smoke]) ->
+                 GHC.Types.:
+                   @ ZebraPuzzle.Smoke
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ ZebraPuzzle.Smoke a })
+                   ys) -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go1 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go2 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go3 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go4 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go5 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go6 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go7 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go8 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+1aec11b270a46392e4307166157e1161
+  $fEnumSmoke_go9 :: GHC.Prim.Int# -> [ZebraPuzzle.Smoke]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+4043863a998a3af8937a68f65f8a4606
+  $fEqAnimal :: GHC.Classes.Eq ZebraPuzzle.Animal
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Animal
+                  ZebraPuzzle.$fEqAnimal_$c==
+                  ZebraPuzzle.$fEqAnimal_$c/= -}
+4043863a998a3af8937a68f65f8a4606
+  $fEqAnimal_$c/= ::
+    ZebraPuzzle.Animal -> ZebraPuzzle.Animal -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Animal)
+                   (b :: ZebraPuzzle.Animal) ->
+                 case a of wild {
+                   ZebraPuzzle.Dog
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Dog -> GHC.Types.False }
+                   ZebraPuzzle.Fox
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Fox -> GHC.Types.False }
+                   ZebraPuzzle.Horse
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Horse -> GHC.Types.False }
+                   ZebraPuzzle.Zebra
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Zebra -> GHC.Types.False }
+                   ZebraPuzzle.Snails
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Snails -> GHC.Types.False } }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fEqAnimal_$c== ::
+    ZebraPuzzle.Animal -> ZebraPuzzle.Animal -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ZebraPuzzle.Animal)
+                   (ds1 :: ZebraPuzzle.Animal) ->
+                 case ds of wild {
+                   ZebraPuzzle.Dog
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Dog -> GHC.Types.True }
+                   ZebraPuzzle.Fox
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Fox -> GHC.Types.True }
+                   ZebraPuzzle.Horse
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Horse -> GHC.Types.True }
+                   ZebraPuzzle.Zebra
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Zebra -> GHC.Types.True }
+                   ZebraPuzzle.Snails
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Snails -> GHC.Types.True } }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEqColor :: GHC.Classes.Eq ZebraPuzzle.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Color
+                  ZebraPuzzle.$fEqColor_$c==
+                  ZebraPuzzle.$fEqColor_$c/= -}
+a043ebad7342fe911155b4dac6781b18
+  $fEqColor_$c/= ::
+    ZebraPuzzle.Color -> ZebraPuzzle.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Color) (b :: ZebraPuzzle.Color) ->
+                 case a of wild {
+                   ZebraPuzzle.Red
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Red -> GHC.Types.False }
+                   ZebraPuzzle.Green
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Green -> GHC.Types.False }
+                   ZebraPuzzle.Ivory
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Ivory -> GHC.Types.False }
+                   ZebraPuzzle.Blue
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Blue -> GHC.Types.False }
+                   ZebraPuzzle.Yellow
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Yellow -> GHC.Types.False } }) -}
+a043ebad7342fe911155b4dac6781b18
+  $fEqColor_$c== ::
+    ZebraPuzzle.Color -> ZebraPuzzle.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ZebraPuzzle.Color)
+                   (ds1 :: ZebraPuzzle.Color) ->
+                 case ds of wild {
+                   ZebraPuzzle.Red
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Red -> GHC.Types.True }
+                   ZebraPuzzle.Green
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Green -> GHC.Types.True }
+                   ZebraPuzzle.Ivory
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Ivory -> GHC.Types.True }
+                   ZebraPuzzle.Blue
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Blue -> GHC.Types.True }
+                   ZebraPuzzle.Yellow
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Yellow -> GHC.Types.True } }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEqDrink :: GHC.Classes.Eq ZebraPuzzle.Drink
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Drink
+                  ZebraPuzzle.$fEqDrink_$c==
+                  ZebraPuzzle.$fEqDrink_$c/= -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEqDrink_$c/= ::
+    ZebraPuzzle.Drink -> ZebraPuzzle.Drink -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Drink) (b :: ZebraPuzzle.Drink) ->
+                 case a of wild {
+                   ZebraPuzzle.Coffee
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Coffee -> GHC.Types.False }
+                   ZebraPuzzle.Tea
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Tea -> GHC.Types.False }
+                   ZebraPuzzle.Milk
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Milk -> GHC.Types.False }
+                   ZebraPuzzle.Juice
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Juice -> GHC.Types.False }
+                   ZebraPuzzle.Water
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Water -> GHC.Types.False } }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fEqDrink_$c== ::
+    ZebraPuzzle.Drink -> ZebraPuzzle.Drink -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ZebraPuzzle.Drink)
+                   (ds1 :: ZebraPuzzle.Drink) ->
+                 case ds of wild {
+                   ZebraPuzzle.Coffee
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Coffee -> GHC.Types.True }
+                   ZebraPuzzle.Tea
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Tea -> GHC.Types.True }
+                   ZebraPuzzle.Milk
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Milk -> GHC.Types.True }
+                   ZebraPuzzle.Juice
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Juice -> GHC.Types.True }
+                   ZebraPuzzle.Water
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Water -> GHC.Types.True } }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEqResident :: GHC.Classes.Eq ZebraPuzzle.Resident
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Resident
+                  ZebraPuzzle.$fEqResident_$c==
+                  ZebraPuzzle.$fEqResident_$c/= -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEqResident_$c/= ::
+    ZebraPuzzle.Resident -> ZebraPuzzle.Resident -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Resident)
+                   (b :: ZebraPuzzle.Resident) ->
+                 case a of wild {
+                   ZebraPuzzle.Englishman
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Englishman -> GHC.Types.False }
+                   ZebraPuzzle.Spaniard
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Spaniard -> GHC.Types.False }
+                   ZebraPuzzle.Ukrainian
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Ukrainian -> GHC.Types.False }
+                   ZebraPuzzle.Norwegian
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Norwegian -> GHC.Types.False }
+                   ZebraPuzzle.Japanese
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Japanese -> GHC.Types.False } }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fEqResident_$c== ::
+    ZebraPuzzle.Resident -> ZebraPuzzle.Resident -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ZebraPuzzle.Resident)
+                   (ds1 :: ZebraPuzzle.Resident) ->
+                 case ds of wild {
+                   ZebraPuzzle.Englishman
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Englishman -> GHC.Types.True }
+                   ZebraPuzzle.Spaniard
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Spaniard -> GHC.Types.True }
+                   ZebraPuzzle.Ukrainian
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Ukrainian -> GHC.Types.True }
+                   ZebraPuzzle.Norwegian
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Norwegian -> GHC.Types.True }
+                   ZebraPuzzle.Japanese
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Japanese -> GHC.Types.True } }) -}
+1aec11b270a46392e4307166157e1161
+  $fEqSmoke :: GHC.Classes.Eq ZebraPuzzle.Smoke
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Smoke
+                  ZebraPuzzle.$fEqSmoke_$c==
+                  ZebraPuzzle.$fEqSmoke_$c/= -}
+1aec11b270a46392e4307166157e1161
+  $fEqSmoke_$c/= ::
+    ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: ZebraPuzzle.Smoke) (b :: ZebraPuzzle.Smoke) ->
+                 case a of wild {
+                   ZebraPuzzle.OldGold
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.OldGold -> GHC.Types.False }
+                   ZebraPuzzle.Kools
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True ZebraPuzzle.Kools -> GHC.Types.False }
+                   ZebraPuzzle.LuckyStrike
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.LuckyStrike -> GHC.Types.False }
+                   ZebraPuzzle.Chesterfields
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Chesterfields -> GHC.Types.False }
+                   ZebraPuzzle.Parliaments
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ZebraPuzzle.Parliaments -> GHC.Types.False } }) -}
+1aec11b270a46392e4307166157e1161
+  $fEqSmoke_$c== ::
+    ZebraPuzzle.Smoke -> ZebraPuzzle.Smoke -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ZebraPuzzle.Smoke)
+                   (ds1 :: ZebraPuzzle.Smoke) ->
+                 case ds of wild {
+                   ZebraPuzzle.OldGold
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.OldGold -> GHC.Types.True }
+                   ZebraPuzzle.Kools
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ZebraPuzzle.Kools -> GHC.Types.True }
+                   ZebraPuzzle.LuckyStrike
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.LuckyStrike -> GHC.Types.True }
+                   ZebraPuzzle.Chesterfields
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Chesterfields -> GHC.Types.True }
+                   ZebraPuzzle.Parliaments
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Parliaments -> GHC.Types.True } }) -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fEqSolution :: GHC.Classes.Eq ZebraPuzzle.Solution
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Solution
+                  ZebraPuzzle.$fEqSolution_$c==
+                  ZebraPuzzle.$fEqSolution_$c/= -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fEqSolution_$c/= ::
+    ZebraPuzzle.Solution -> ZebraPuzzle.Solution -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: ZebraPuzzle.Solution) (b :: ZebraPuzzle.Solution) ->
+                 case ZebraPuzzle.$fEqSolution_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fEqSolution_$c== ::
+    ZebraPuzzle.Solution -> ZebraPuzzle.Solution -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: ZebraPuzzle.Solution) (w1 :: ZebraPuzzle.Solution) ->
+                 case w of ww { ZebraPuzzle.Solution ww1 ww2 ->
+                 case w1 of ww3 { ZebraPuzzle.Solution ww4 ww5 ->
+                 ZebraPuzzle.$w$c== ww1 ww2 ww4 ww5 } }) -}
+4043863a998a3af8937a68f65f8a4606
+  $fShowAnimal :: GHC.Show.Show ZebraPuzzle.Animal
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Animal
+                  ZebraPuzzle.$fShowAnimal_$cshowsPrec
+                  ZebraPuzzle.$fShowAnimal_$cshow
+                  ZebraPuzzle.$fShowAnimal_$cshowList -}
+ab53338c6337e19967ec8518d2501e32
+  $fShowAnimal1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Snails"#) -}
+735f77877e606abadcfee69482f404f8
+  $fShowAnimal2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Zebra"#) -}
+1628868e444ca7e4cc34c0f5ed7ad0f0
+  $fShowAnimal3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Horse"#) -}
+fb001d733c2f83a3249aa278569cf269
+  $fShowAnimal4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Fox"#) -}
+dc332a4aeeefbb74c8fd9f0f84ebfd8e
+  $fShowAnimal5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Dog"#) -}
+4043863a998a3af8937a68f65f8a4606
+  $fShowAnimal_$cshow :: ZebraPuzzle.Animal -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ZebraPuzzle.Animal) ->
+                 ZebraPuzzle.$fShowAnimal_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4043863a998a3af8937a68f65f8a4606
+  $fShowAnimal_$cshowList :: [ZebraPuzzle.Animal] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ ZebraPuzzle.Animal
+                   ZebraPuzzle.$w$cshowsPrec) -}
+4043863a998a3af8937a68f65f8a4606
+  $fShowAnimal_$cshowsPrec ::
+    GHC.Types.Int -> ZebraPuzzle.Animal -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ZebraPuzzle.Animal)
+                   (w2 :: GHC.Base.String) ->
+                 ZebraPuzzle.$w$cshowsPrec w1 w2) -}
+a043ebad7342fe911155b4dac6781b18
+  $fShowColor :: GHC.Show.Show ZebraPuzzle.Color
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Color
+                  ZebraPuzzle.$fShowColor_$cshowsPrec
+                  ZebraPuzzle.$fShowColor_$cshow
+                  ZebraPuzzle.$fShowColor_$cshowList -}
+d9f2ee6949351ff21e8739fd66aeb1e1
+  $fShowColor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Yellow"#) -}
+342b1b10982db650593d8fb6c8a36407
+  $fShowColor2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Blue"#) -}
+138b8d87ed647722f0ae08e2a37ea265
+  $fShowColor3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Ivory"#) -}
+a0b63baa2582233747b6e0a2847f6063
+  $fShowColor4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Green"#) -}
+5b2fad6d941c8ad91d03752cadf454b7
+  $fShowColor5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Red"#) -}
+a043ebad7342fe911155b4dac6781b18
+  $fShowColor_$cshow :: ZebraPuzzle.Color -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ZebraPuzzle.Color) ->
+                 ZebraPuzzle.$fShowColor_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a043ebad7342fe911155b4dac6781b18
+  $fShowColor_$cshowList :: [ZebraPuzzle.Color] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ ZebraPuzzle.Color
+                   ZebraPuzzle.$w$cshowsPrec1) -}
+a043ebad7342fe911155b4dac6781b18
+  $fShowColor_$cshowsPrec ::
+    GHC.Types.Int -> ZebraPuzzle.Color -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ZebraPuzzle.Color)
+                   (w2 :: GHC.Base.String) ->
+                 ZebraPuzzle.$w$cshowsPrec1 w1 w2) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fShowDrink :: GHC.Show.Show ZebraPuzzle.Drink
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Drink
+                  ZebraPuzzle.$fShowDrink_$cshowsPrec
+                  ZebraPuzzle.$fShowDrink_$cshow
+                  ZebraPuzzle.$fShowDrink_$cshowList -}
+ecf1f5c1fa08920fb381ace2d8b8a5da
+  $fShowDrink1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Water"#) -}
+fac65a9f97fa87f97f1d1b3217d04d4e
+  $fShowDrink2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Juice"#) -}
+8e9dd591e0fdc06bbe1578281a40c985
+  $fShowDrink3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Milk"#) -}
+c05319216bf402e6f75803a9e78813cb
+  $fShowDrink4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Tea"#) -}
+ada2f1bd6ce4103b46542420574421e5
+  $fShowDrink5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Coffee"#) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fShowDrink_$cshow :: ZebraPuzzle.Drink -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ZebraPuzzle.Drink) ->
+                 ZebraPuzzle.$fShowDrink_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fShowDrink_$cshowList :: [ZebraPuzzle.Drink] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ ZebraPuzzle.Drink
+                   ZebraPuzzle.$w$cshowsPrec2) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $fShowDrink_$cshowsPrec ::
+    GHC.Types.Int -> ZebraPuzzle.Drink -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ZebraPuzzle.Drink)
+                   (w2 :: GHC.Base.String) ->
+                 ZebraPuzzle.$w$cshowsPrec2 w1 w2) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fShowResident :: GHC.Show.Show ZebraPuzzle.Resident
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Resident
+                  ZebraPuzzle.$fShowResident_$cshowsPrec
+                  ZebraPuzzle.$fShowResident_$cshow
+                  ZebraPuzzle.$fShowResident_$cshowList -}
+58ab9868b0d2654c1ffc0162e798f39f
+  $fShowResident1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Japanese"#) -}
+90a31b76a02f134f9398c4ccee956c91
+  $fShowResident2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Norwegian"#) -}
+b1e6df631bb187ce57e880b70322b2cb
+  $fShowResident3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Ukrainian"#) -}
+360191289f39dc14cc0dd2859c89d901
+  $fShowResident4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Spaniard"#) -}
+c47c4eb993759f9c6813101aa23aed40
+  $fShowResident5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Englishman"#) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fShowResident_$cshow :: ZebraPuzzle.Resident -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ZebraPuzzle.Resident) ->
+                 ZebraPuzzle.$fShowResident_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fShowResident_$cshowList ::
+    [ZebraPuzzle.Resident] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ ZebraPuzzle.Resident
+                   ZebraPuzzle.$w$cshowsPrec3) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $fShowResident_$cshowsPrec ::
+    GHC.Types.Int -> ZebraPuzzle.Resident -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ZebraPuzzle.Resident)
+                   (w2 :: GHC.Base.String) ->
+                 ZebraPuzzle.$w$cshowsPrec3 w1 w2) -}
+1aec11b270a46392e4307166157e1161
+  $fShowSmoke :: GHC.Show.Show ZebraPuzzle.Smoke
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Smoke
+                  ZebraPuzzle.$fShowSmoke_$cshowsPrec
+                  ZebraPuzzle.$fShowSmoke_$cshow
+                  ZebraPuzzle.$fShowSmoke_$cshowList -}
+15f3340b5353567de932f3a02a8fb298
+  $fShowSmoke1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Parliaments"#) -}
+749294a1e9d4faf96842588e202430e9
+  $fShowSmoke2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Chesterfields"#) -}
+310cfeadc4eb383ba890da085c3d945a
+  $fShowSmoke3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "LuckyStrike"#) -}
+a934ce0d01b36fc43fe9d8eaedb5c879
+  $fShowSmoke4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Kools"#) -}
+82cd2fa5984d2f0226b327720b3790d9
+  $fShowSmoke5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "OldGold"#) -}
+1aec11b270a46392e4307166157e1161
+  $fShowSmoke_$cshow :: ZebraPuzzle.Smoke -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ZebraPuzzle.Smoke) ->
+                 ZebraPuzzle.$fShowSmoke_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1aec11b270a46392e4307166157e1161
+  $fShowSmoke_$cshowList :: [ZebraPuzzle.Smoke] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ ZebraPuzzle.Smoke
+                   ZebraPuzzle.$w$cshowsPrec4) -}
+1aec11b270a46392e4307166157e1161
+  $fShowSmoke_$cshowsPrec ::
+    GHC.Types.Int -> ZebraPuzzle.Smoke -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ZebraPuzzle.Smoke)
+                   (w2 :: GHC.Base.String) ->
+                 ZebraPuzzle.$w$cshowsPrec4 w1 w2) -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fShowSolution :: GHC.Show.Show ZebraPuzzle.Solution
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ZebraPuzzle.Solution
+                  ZebraPuzzle.$fShowSolution_$cshowsPrec
+                  ZebraPuzzle.$fShowSolution_$cshow
+                  ZebraPuzzle.$fShowSolution_$cshowList -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fShowSolution1 :: ZebraPuzzle.Solution -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: ZebraPuzzle.Solution)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { ZebraPuzzle.Solution ww1 ww2 ->
+                 ZebraPuzzle.$w$cshowsPrec5 0# ww1 ww2 w1 }) -}
+c3cf369f96e85ffbc2701095a9ac0e5f
+  $fShowSolution2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Solution {"#) -}
+bd157e2dbed5b66b69cbae30e065b02a
+  $fShowSolution3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+bcdce64a77c55e57c2df1851eef13c10
+  $fShowSolution4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "zebraOwner = "#) -}
+4f1eb9f3efe22be044854d82294c5ed4
+  $fShowSolution5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+9ff9135e9468db078113d3b96e62d6a6
+  $fShowSolution6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "waterDrinker = "#) -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fShowSolution_$cshow :: ZebraPuzzle.Solution -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: ZebraPuzzle.Solution) ->
+                 ZebraPuzzle.$fShowSolution_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fShowSolution_$cshowList ::
+    [ZebraPuzzle.Solution] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ ZebraPuzzle.Solution
+                   ZebraPuzzle.$fShowSolution1) -}
+67f23f64145accb4ba8ae1522e1cd782
+  $fShowSolution_$cshowsPrec ::
+    GHC.Types.Int -> ZebraPuzzle.Solution -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ZebraPuzzle.Solution)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { ZebraPuzzle.Solution ww3 ww4 ->
+                 ZebraPuzzle.$w$cshowsPrec5 ww1 ww3 ww4 w2 } }) -}
+ed2fcbd35a9a25da92fd332de2be67d1
+  $s$fEq(,) :: GHC.Classes.Eq (ZebraPuzzle.Smoke, ZebraPuzzle.Drink)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Smoke, ZebraPuzzle.Drink)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Smoke
+                     @ ZebraPuzzle.Drink
+                     ZebraPuzzle.$fEqSmoke
+                     ZebraPuzzle.$fEqDrink)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Smoke
+                     @ ZebraPuzzle.Drink
+                     ZebraPuzzle.$fEqSmoke
+                     ZebraPuzzle.$fEqDrink) -}
+d5d5a227dc4d118bff0c948b4b383791
+  $s$fEq(,)1 ::
+    GHC.Classes.Eq (ZebraPuzzle.Smoke, ZebraPuzzle.Animal)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Smoke, ZebraPuzzle.Animal)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Smoke
+                     @ ZebraPuzzle.Animal
+                     ZebraPuzzle.$fEqSmoke
+                     ZebraPuzzle.$fEqAnimal)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Smoke
+                     @ ZebraPuzzle.Animal
+                     ZebraPuzzle.$fEqSmoke
+                     ZebraPuzzle.$fEqAnimal) -}
+ab3b6f809a81e83ce3fe225fcbf4b330
+  $s$fEq(,)10 ::
+    GHC.Classes.Eq (ZebraPuzzle.Resident, ZebraPuzzle.Color)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Resident, ZebraPuzzle.Color)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqColor)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqColor) -}
+0d6f5d394c0d323019c225a8446a50df
+  $s$fEq(,)2 ::
+    GHC.Classes.Eq (ZebraPuzzle.Animal, ZebraPuzzle.Smoke)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Animal, ZebraPuzzle.Smoke)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Animal
+                     @ ZebraPuzzle.Smoke
+                     ZebraPuzzle.$fEqAnimal
+                     ZebraPuzzle.$fEqSmoke)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Animal
+                     @ ZebraPuzzle.Smoke
+                     ZebraPuzzle.$fEqAnimal
+                     ZebraPuzzle.$fEqSmoke) -}
+947b80f05e4cee362c8b3b364f1d59af
+  $s$fEq(,)3 :: GHC.Classes.Eq (ZebraPuzzle.Smoke, ZebraPuzzle.Color)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Smoke, ZebraPuzzle.Color)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Smoke
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqSmoke
+                     ZebraPuzzle.$fEqColor)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Smoke
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqSmoke
+                     ZebraPuzzle.$fEqColor) -}
+4973f50908b95f06fa805e0d01e774db
+  $s$fEq(,)4 :: GHC.Classes.Eq (ZebraPuzzle.Drink, ZebraPuzzle.Color)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Drink, ZebraPuzzle.Color)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Drink
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqDrink
+                     ZebraPuzzle.$fEqColor)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Drink
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqDrink
+                     ZebraPuzzle.$fEqColor) -}
+a7764dff1bcccd1c9ffa90912f4c33d6
+  $s$fEq(,)5 :: GHC.Classes.Eq (ZebraPuzzle.Color, ZebraPuzzle.Color)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Color, ZebraPuzzle.Color)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Color
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqColor
+                     ZebraPuzzle.$fEqColor)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Color
+                     @ ZebraPuzzle.Color
+                     ZebraPuzzle.$fEqColor
+                     ZebraPuzzle.$fEqColor) -}
+d98313d793c36ce1a42a3e811eb8a8b1
+  $s$fEq(,)6 ::
+    GHC.Classes.Eq (ZebraPuzzle.Color, ZebraPuzzle.Resident)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Color, ZebraPuzzle.Resident)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Color
+                     @ ZebraPuzzle.Resident
+                     ZebraPuzzle.$fEqColor
+                     ZebraPuzzle.$fEqResident)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Color
+                     @ ZebraPuzzle.Resident
+                     ZebraPuzzle.$fEqColor
+                     ZebraPuzzle.$fEqResident) -}
+01754de68b7c6edeb2476e800bc6fdd9
+  $s$fEq(,)7 ::
+    GHC.Classes.Eq (ZebraPuzzle.Resident, ZebraPuzzle.Smoke)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Resident, ZebraPuzzle.Smoke)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Smoke
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqSmoke)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Smoke
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqSmoke) -}
+2323f9b6f79442333fd9a74cf9527660
+  $s$fEq(,)8 ::
+    GHC.Classes.Eq (ZebraPuzzle.Resident, ZebraPuzzle.Drink)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Resident, ZebraPuzzle.Drink)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Drink
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqDrink)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Drink
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqDrink) -}
+6ff4a9b7bf030d30a0acf6879ce37ff4
+  $s$fEq(,)9 ::
+    GHC.Classes.Eq (ZebraPuzzle.Resident, ZebraPuzzle.Animal)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (ZebraPuzzle.Resident, ZebraPuzzle.Animal)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Animal
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqAnimal)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ZebraPuzzle.Resident
+                     @ ZebraPuzzle.Animal
+                     ZebraPuzzle.$fEqResident
+                     ZebraPuzzle.$fEqAnimal) -}
+712f022f72b053281f22958bcbd0e5e7
+  $tc'Blue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11493817947138467275##
+                   5299521537552365293##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Blue1) -}
+45d6aa35fcb88ba86eed6f1ca3def1e9
+  $tc'Blue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Blue"#) -}
+8c428219bec90aa2e0fa2477c0e5d356
+  $tc'Chesterfields :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2224495539799959570##
+                   9495709474540235790##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Chesterfields1) -}
+b2fb4516c966daa30fa4c6163068df72
+  $tc'Chesterfields1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Chesterfields"#) -}
+a51ed9cf6ff60e33d8bdbbd9f6e7b404
+  $tc'Coffee :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12403747436017254205##
+                   1347088958469067086##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Coffee1) -}
+4edc4d89699c05509259a13b40c7fa6b
+  $tc'Coffee1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Coffee"#) -}
+fe13f3f4d35e761005ba9e6307eb6c10
+  $tc'Dog :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5107646703968277301##
+                   13304142055641728505##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Dog1) -}
+3d13bbfeb94908282719ae74522e83da
+  $tc'Dog1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Dog"#) -}
+faac6f3b0d4015696406e7479b2284db
+  $tc'Englishman :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9389751924513788703##
+                   6062680090607884636##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Englishman1) -}
+6b37575908673188c6b6b34696a5ac1f
+  $tc'Englishman1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Englishman"#) -}
+d1558ae53c0bf5fdf4f4518e6aac6b51
+  $tc'Fox :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4108104833161607246##
+                   4857178618511995816##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Fox1) -}
+384d04d907d336688f04ff1a56487b8b
+  $tc'Fox1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Fox"#) -}
+096f47194d5419ddd360c8c1af3dd1a4
+  $tc'Green :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2631330674324999243##
+                   13274169073316178386##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Green1) -}
+29336f4dcb1370dd5764e90963f72ffb
+  $tc'Green1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Green"#) -}
+9caaa24b15de6a7ce6efb18ba7ec7bfb
+  $tc'Horse :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1574077443108850374##
+                   2239603052090357657##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Horse1) -}
+a9c1a0ca3a8693848d15197674605a17
+  $tc'Horse1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Horse"#) -}
+904de7634d2dd1ed1310365ce2a74b86
+  $tc'Ivory :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12439647831638897546##
+                   16878625759016553742##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Ivory1) -}
+481cd7a3d53fe2189a2421635e8dc40f
+  $tc'Ivory1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Ivory"#) -}
+ca4f71d707b2e33cb332f98e582c9d5d
+  $tc'Japanese :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12402231787833708749##
+                   4094849671047248189##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Japanese1) -}
+e024058e4eb0e7b40de0ff6b11d55be1
+  $tc'Japanese1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Japanese"#) -}
+c75cba3fe655c3dad4d727b24ec20fa5
+  $tc'Juice :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7284652807387432524##
+                   8923053019463418280##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Juice1) -}
+851dc747c1fd49d18b7710dc2ebd706d
+  $tc'Juice1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Juice"#) -}
+4a834f1c37c8c5c62fedccf35bd4de3f
+  $tc'Kools :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17088252971665799462##
+                   1021993520677768970##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Kools1) -}
+903b1117bfd971d7975781c326f51c9a
+  $tc'Kools1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Kools"#) -}
+199426458f373ab27bd3463517f33dc4
+  $tc'LuckyStrike :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2576225051858612357##
+                   10501055883072951208##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'LuckyStrike1) -}
+d8079ed67144e397638b10306d5dc1c8
+  $tc'LuckyStrike1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'LuckyStrike"#) -}
+31c20a5c29e97cdf033c954f5a382415
+  $tc'Milk :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3094091400496377807##
+                   2894496599699297949##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Milk1) -}
+5a508256f180932fb571d336c6a2117e
+  $tc'Milk1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Milk"#) -}
+5cedfc7755ec63d5db528cf05fc5daee
+  $tc'Norwegian :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7865542624727203366##
+                   13847642979611158176##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Norwegian1) -}
+77229ff2cfb839534436fa2f39991bc0
+  $tc'Norwegian1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Norwegian"#) -}
+3813a09cd4f98d8393c015a5b03664ca
+  $tc'OldGold :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13592809229754402375##
+                   6757722537340248428##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'OldGold1) -}
+3a0eb51b078a3fd47ce712fbc881fa13
+  $tc'OldGold1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'OldGold"#) -}
+b2e1d81c59e83b5422ea9aa9a0332e0a
+  $tc'Parliaments :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14245425214704068534##
+                   3678686388114219753##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Parliaments1) -}
+1fa48451fbcc18c17c9b9b0236079ad6
+  $tc'Parliaments1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Parliaments"#) -}
+f765f2d75917702066a13aee21cc090f
+  $tc'Red :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17977799633478377101##
+                   16321512612725409469##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Red1) -}
+2338013fde9712d383a76f394ca74408
+  $tc'Red1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Red"#) -}
+f3d2ce4b66f0beb9f80cea538eb25b6e
+  $tc'Snails :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3742938968583838926##
+                   15098690046552580825##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Snails1) -}
+2f254f32faac938334ffd28bef902e81
+  $tc'Snails1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Snails"#) -}
+e6a652b1cd23ec25ae27acb41dbc5510
+  $tc'Solution :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9581757385350960417##
+                   18156939593180021772##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Solution1) -}
+7dd33fa97dcbdaa645a39460bdf9b033
+  $tc'Solution1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Solution"#) -}
+504cc828b6f676ecfba57d5c3c86e310
+  $tc'Spaniard :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4068282228147871640##
+                   1403106219169363796##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Spaniard1) -}
+19ba0d81072fb966ae4d1b72ede74adb
+  $tc'Spaniard1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Spaniard"#) -}
+e2bb38a63ba2a033fede8e1ac2400f7c
+  $tc'Tea :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6368624707936001673##
+                   963308890643847319##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Tea1) -}
+787941d324c1bd8d4cf77d06ded213f6
+  $tc'Tea1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Tea"#) -}
+1c3442ec8563d10e40f77d53f0ed6732
+  $tc'Ukrainian :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16818464430319471827##
+                   11130910328691120479##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Ukrainian1) -}
+36dc7bb14f1804f9c58fa8df1ea8c108
+  $tc'Ukrainian1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Ukrainian"#) -}
+03a8be06214fd93e341fc0cde6daf29f
+  $tc'Water :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4307963837408883495##
+                   10738741627491039101##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Water1) -}
+b457c5557eb97f5c9145987e177ac324
+  $tc'Water1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Water"#) -}
+78889b7587073a41685bc25c6b1a5e4f
+  $tc'Yellow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8694003804592232590##
+                   10120680719638040011##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Yellow1) -}
+5ac4a5bb81dba79ea336d53c3decf824
+  $tc'Yellow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Yellow"#) -}
+225ef56292f99390887fc9231e65c60a
+  $tc'Zebra :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15504387943685849265##
+                   6148492833527531394##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tc'Zebra1) -}
+9d23c01ec0cff5ab751d2b5042b5bdcd
+  $tc'Zebra1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Zebra"#) -}
+b0ac3ae9d650bcad50311aa6ca631c57
+  $tcAnimal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17458264391276313159##
+                   997060199060293689##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tcAnimal1) -}
+c517617c46d6c67df1ca995deda8041e
+  $tcAnimal1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Animal"#) -}
+ae85975f20876efbe0c6959752d6ea7f
+  $tcColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13795049747239493413##
+                   8322813545120683904##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tcColor1) -}
+21cb6646c0e99e656c499d3f16b1eb13
+  $tcColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Color"#) -}
+d8e7cdc41c37c550bcdc53d7c1167dd7
+  $tcDrink :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17449227308419691735##
+                   15341186473052422599##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tcDrink1) -}
+21a1b123f2174b027c8976f19b91fb2b
+  $tcDrink1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Drink"#) -}
+96e34d97a54bd13c8c431f7b19ea0145
+  $tcResident :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4586164994740337608##
+                   15593540090085150598##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tcResident1) -}
+87947b9dbd80f1541d8fbbd805fbca4d
+  $tcResident1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Resident"#) -}
+fbf6ebb665ed470a48c11cc2c62e67bd
+  $tcSmoke :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3809001900483309333##
+                   7684419852067483123##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tcSmoke1) -}
+537018f1e12345b129a1736ad39125a2
+  $tcSmoke1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Smoke"#) -}
+5fdc28c0b0e501d791264e9ddac70cf9
+  $tcSolution :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9177962309357819561##
+                   13243952084023795053##
+                   ZebraPuzzle.$trModule
+                   ZebraPuzzle.$tcSolution1) -}
+366af779807aa2ce9f338502bd49bb39
+  $tcSolution1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Solution"#) -}
+ade22e8bf509b48235b1a229361ea431
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ZebraPuzzle.$trModule2
+                   ZebraPuzzle.$trModule1) -}
+ee84bef61a4b7756a2faa4671fe7c259
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ZebraPuzzle"#) -}
+1094354c2149cc7164ffa03427de4fd3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "zebra-puzzle-0.0.0-2NbjAiZgJwQ3q8AZNMl562"#) -}
+e1f000a69fa2e94abd23662918c84207
+  $w$c== ::
+    ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: ZebraPuzzle.Resident)
+                   (ww1 :: ZebraPuzzle.Resident)
+                   (ww2 :: ZebraPuzzle.Resident)
+                   (ww3 :: ZebraPuzzle.Resident) ->
+                 case ww of wild {
+                   ZebraPuzzle.Englishman
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Englishman -> ZebraPuzzle.$fEqResident_$c== ww1 ww3 }
+                   ZebraPuzzle.Spaniard
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Spaniard -> ZebraPuzzle.$fEqResident_$c== ww1 ww3 }
+                   ZebraPuzzle.Ukrainian
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Ukrainian -> ZebraPuzzle.$fEqResident_$c== ww1 ww3 }
+                   ZebraPuzzle.Norwegian
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Norwegian -> ZebraPuzzle.$fEqResident_$c== ww1 ww3 }
+                   ZebraPuzzle.Japanese
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ZebraPuzzle.Japanese
+                        -> ZebraPuzzle.$fEqResident_$c== ww1 ww3 } }) -}
+4043863a998a3af8937a68f65f8a4606
+  $w$cshowsPrec ::
+    ZebraPuzzle.Animal -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: ZebraPuzzle.Animal) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ZebraPuzzle.Dog
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowAnimal5 w1
+                   ZebraPuzzle.Fox
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowAnimal4 w1
+                   ZebraPuzzle.Horse
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowAnimal3 w1
+                   ZebraPuzzle.Zebra
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowAnimal2 w1
+                   ZebraPuzzle.Snails
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowAnimal1 w1 }) -}
+a043ebad7342fe911155b4dac6781b18
+  $w$cshowsPrec1 ::
+    ZebraPuzzle.Color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: ZebraPuzzle.Color) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ZebraPuzzle.Red
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowColor5 w1
+                   ZebraPuzzle.Green
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowColor4 w1
+                   ZebraPuzzle.Ivory
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowColor3 w1
+                   ZebraPuzzle.Blue
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowColor2 w1
+                   ZebraPuzzle.Yellow
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowColor1 w1 }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $w$cshowsPrec2 ::
+    ZebraPuzzle.Drink -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: ZebraPuzzle.Drink) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ZebraPuzzle.Coffee
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowDrink5 w1
+                   ZebraPuzzle.Tea
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowDrink4 w1
+                   ZebraPuzzle.Milk
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowDrink3 w1
+                   ZebraPuzzle.Juice
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowDrink2 w1
+                   ZebraPuzzle.Water
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowDrink1 w1 }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $w$cshowsPrec3 ::
+    ZebraPuzzle.Resident -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: ZebraPuzzle.Resident)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ZebraPuzzle.Englishman
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowResident5 w1
+                   ZebraPuzzle.Spaniard
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowResident4 w1
+                   ZebraPuzzle.Ukrainian
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowResident3 w1
+                   ZebraPuzzle.Norwegian
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowResident2 w1
+                   ZebraPuzzle.Japanese
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        ZebraPuzzle.$fShowResident1
+                        w1 }) -}
+1aec11b270a46392e4307166157e1161
+  $w$cshowsPrec4 ::
+    ZebraPuzzle.Smoke -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: ZebraPuzzle.Smoke) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ZebraPuzzle.OldGold
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSmoke5 w1
+                   ZebraPuzzle.Kools
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSmoke4 w1
+                   ZebraPuzzle.LuckyStrike
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSmoke3 w1
+                   ZebraPuzzle.Chesterfields
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSmoke2 w1
+                   ZebraPuzzle.Parliaments
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSmoke1 w1 }) -}
+0a53ea1f2b18e684b0a2e65bc28d4e5e
+  $w$cshowsPrec5 ::
+    GHC.Prim.Int#
+    -> ZebraPuzzle.Resident
+    -> ZebraPuzzle.Resident
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: ZebraPuzzle.Resident)
+                   (ww2 :: ZebraPuzzle.Resident)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       ZebraPuzzle.$fShowSolution6
+                       (ZebraPuzzle.$w$cshowsPrec3
+                          ww1
+                          (GHC.Base.++
+                             @ GHC.Types.Char
+                             ZebraPuzzle.$fShowSolution5
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                ZebraPuzzle.$fShowSolution4
+                                (ZebraPuzzle.$w$cshowsPrec3
+                                   ww2
+                                   (GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSolution3 x)))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++ @ GHC.Types.Char ZebraPuzzle.$fShowSolution2 (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           ZebraPuzzle.$fShowSolution2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w))) }) -}
+4043863a998a3af8937a68f65f8a4606
+  $w$ctoEnum :: GHC.Prim.Int# -> ZebraPuzzle.Animal
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> ZebraPuzzle.$fEnumAnimal6 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> ZebraPuzzle.$fEnumAnimal6 ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ ZebraPuzzle.Animal ww } }) -}
+a043ebad7342fe911155b4dac6781b18
+  $w$ctoEnum1 :: GHC.Prim.Int# -> ZebraPuzzle.Color
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> ZebraPuzzle.$fEnumColor6 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> ZebraPuzzle.$fEnumColor6 ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ ZebraPuzzle.Color ww } }) -}
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  $w$ctoEnum2 :: GHC.Prim.Int# -> ZebraPuzzle.Drink
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> ZebraPuzzle.$fEnumDrink6 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> ZebraPuzzle.$fEnumDrink6 ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ ZebraPuzzle.Drink ww } }) -}
+e88a6a254bcc72b7d514a9f15549cea7
+  $w$ctoEnum3 :: GHC.Prim.Int# -> ZebraPuzzle.Resident
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> ZebraPuzzle.$fEnumResident6 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> ZebraPuzzle.$fEnumResident6 ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ ZebraPuzzle.Resident ww } }) -}
+1aec11b270a46392e4307166157e1161
+  $w$ctoEnum4 :: GHC.Prim.Int# -> ZebraPuzzle.Smoke
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> ZebraPuzzle.$fEnumSmoke6 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> ZebraPuzzle.$fEnumSmoke6 ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ ZebraPuzzle.Smoke ww } }) -}
+07f09f6110eb72b361c844d3ecdb0e86
+  $wgo ::
+    GHC.Prim.Int# -> (# ZebraPuzzle.Color, [ZebraPuzzle.Color] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+4043863a998a3af8937a68f65f8a4606
+  data Animal = Dog | Fox | Horse | Zebra | Snails
+a043ebad7342fe911155b4dac6781b18
+  data Color = Red | Green | Ivory | Blue | Yellow
+ebc18e4a2b1c4362cd7eb5d6408dd6a3
+  data Drink = Coffee | Tea | Milk | Juice | Water
+e88a6a254bcc72b7d514a9f15549cea7
+  data Resident
+    = Englishman | Spaniard | Ukrainian | Norwegian | Japanese
+1aec11b270a46392e4307166157e1161
+  data Smoke
+    = OldGold | Kools | LuckyStrike | Chesterfields | Parliaments
+67f23f64145accb4ba8ae1522e1cd782
+  data Solution
+    = Solution {waterDrinker :: ZebraPuzzle.Resident,
+                zebraOwner :: ZebraPuzzle.Resident}
+8a787e2563c3bc8feffff2ef4f411746
+  solve :: ZebraPuzzle.Solution
+  {- Strictness: m,
+     Unfolding: (ZebraPuzzle.Solution
+                   ZebraPuzzle.solve6
+                   ZebraPuzzle.solve1) -}
+fb9558ac3ce2a8e12b446e3c2803f76d
+  solve1 :: ZebraPuzzle.Resident
+  {- Unfolding: (case GHC.List.filter
+                        @ (ZebraPuzzle.Resident, ZebraPuzzle.Color, ZebraPuzzle.Animal,
+                           ZebraPuzzle.Drink, ZebraPuzzle.Smoke)
+                        ZebraPuzzle.solve5
+                        ZebraPuzzle.solve_ans of wild {
+                   [] -> ZebraPuzzle.solve2 @ ZebraPuzzle.Resident
+                   : ds ds1
+                   -> case ds of wild1 { (,,,,) a ds2 ds3 ds4 ds5 ->
+                      case ds1 of wild2 {
+                        [] -> a
+                        : ipv ipv1 -> ZebraPuzzle.solve2 @ ZebraPuzzle.Resident } } }) -}
+f47062e71578044dfe4148330b958d55
+  solve2 :: t
+  {- Strictness: x -}
+8698af29ec12a119dbe95abcec714ada
+  solve3 :: [[ZebraPuzzle.Color]]
+  {- Unfolding: (GHC.Types.:
+                   @ [ZebraPuzzle.Color]
+                   ZebraPuzzle.solve_xs0
+                   ZebraPuzzle.solve4) -}
+e6ae7dfe39ebe3fa2ab30de666558bcc
+  solve4 :: [[ZebraPuzzle.Color]]
+  {- Unfolding: (Data.OldList.permutations1
+                   @ ZebraPuzzle.Color
+                   ZebraPuzzle.solve_xs0
+                   (GHC.Types.[] @ ZebraPuzzle.Color)) -}
+33a057c45d07c04fa1a422824c5faae3
+  solve5 ::
+    (ZebraPuzzle.Resident, ZebraPuzzle.Color, ZebraPuzzle.Animal,
+     ZebraPuzzle.Drink, ZebraPuzzle.Smoke)
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (ds :: (ZebraPuzzle.Resident, ZebraPuzzle.Color,
+                           ZebraPuzzle.Animal, ZebraPuzzle.Drink, ZebraPuzzle.Smoke)) ->
+                 case ds of wild { (,,,,) ds1 ds2 x ds3 ds4 ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Types.False
+                   ZebraPuzzle.Zebra -> GHC.Types.True } }) -}
+8a25045ca41c9994a2fcba28d17e5149
+  solve6 :: ZebraPuzzle.Resident
+  {- Unfolding: (case GHC.List.filter
+                        @ (ZebraPuzzle.Resident, ZebraPuzzle.Color, ZebraPuzzle.Animal,
+                           ZebraPuzzle.Drink, ZebraPuzzle.Smoke)
+                        ZebraPuzzle.solve7
+                        ZebraPuzzle.solve_ans of wild {
+                   [] -> ZebraPuzzle.solve2 @ ZebraPuzzle.Resident
+                   : ds ds1
+                   -> case ds of wild1 { (,,,,) a ds2 ds3 ds4 ds5 ->
+                      case ds1 of wild2 {
+                        [] -> a
+                        : ipv ipv1 -> ZebraPuzzle.solve2 @ ZebraPuzzle.Resident } } }) -}
+e5c4c84bb495a3f37087d482db973999
+  solve7 ::
+    (ZebraPuzzle.Resident, ZebraPuzzle.Color, ZebraPuzzle.Animal,
+     ZebraPuzzle.Drink, ZebraPuzzle.Smoke)
+    -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (ds :: (ZebraPuzzle.Resident, ZebraPuzzle.Color,
+                           ZebraPuzzle.Animal, ZebraPuzzle.Drink, ZebraPuzzle.Smoke)) ->
+                 case ds of wild { (,,,,) ds1 ds2 ds3 x ds4 ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Types.False
+                   ZebraPuzzle.Water -> GHC.Types.True } }) -}
+40f463c257944928271b00a0011de216
+  solve_ans ::
+    [(ZebraPuzzle.Resident, ZebraPuzzle.Color, ZebraPuzzle.Animal,
+      ZebraPuzzle.Drink, ZebraPuzzle.Smoke)]
+  {- Unfolding: (ZebraPuzzle.solve_go ZebraPuzzle.solve3) -}
+9d29490c25991e1b66910d4dbdf2fba8
+  solve_go ::
+    [[ZebraPuzzle.Color]]
+    -> [(ZebraPuzzle.Resident, ZebraPuzzle.Color, ZebraPuzzle.Animal,
+         ZebraPuzzle.Drink, ZebraPuzzle.Smoke)]
+  {- Arity: 1, Strictness: <S,1*U> -}
+6f6ea4adb1fcc72709b2d77db9c53700
+  solve_xs0 :: [ZebraPuzzle.Color]
+  {- Unfolding: (case ZebraPuzzle.$wgo 0# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ ZebraPuzzle.Color ww1 ww2 }) -}
+3885dcfe34749769918e0b6ede2e2417
+  waterDrinker :: ZebraPuzzle.Solution -> ZebraPuzzle.Resident
+  RecSel Left ZebraPuzzle.Solution
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ZebraPuzzle.Solution) ->
+                 case ds of wild { ZebraPuzzle.Solution ds1 ds2 -> ds1 }) -}
+1ad961cbf92d4dd13952f4a179199af6
+  zebraOwner :: ZebraPuzzle.Solution -> ZebraPuzzle.Resident
+  RecSel Left ZebraPuzzle.Solution
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ZebraPuzzle.Solution) ->
+                 case ds of wild { ZebraPuzzle.Solution ds1 ds2 -> ds2 }) -}
+instance [safe] GHC.Enum.Bounded [ZebraPuzzle.Animal]
+  = ZebraPuzzle.$fBoundedAnimal
+instance [safe] GHC.Enum.Bounded [ZebraPuzzle.Color]
+  = ZebraPuzzle.$fBoundedColor
+instance [safe] GHC.Enum.Bounded [ZebraPuzzle.Drink]
+  = ZebraPuzzle.$fBoundedDrink
+instance [safe] GHC.Enum.Bounded [ZebraPuzzle.Resident]
+  = ZebraPuzzle.$fBoundedResident
+instance [safe] GHC.Enum.Bounded [ZebraPuzzle.Smoke]
+  = ZebraPuzzle.$fBoundedSmoke
+instance [safe] GHC.Enum.Enum [ZebraPuzzle.Animal]
+  = ZebraPuzzle.$fEnumAnimal
+instance [safe] GHC.Enum.Enum [ZebraPuzzle.Color]
+  = ZebraPuzzle.$fEnumColor
+instance [safe] GHC.Enum.Enum [ZebraPuzzle.Drink]
+  = ZebraPuzzle.$fEnumDrink
+instance [safe] GHC.Enum.Enum [ZebraPuzzle.Resident]
+  = ZebraPuzzle.$fEnumResident
+instance [safe] GHC.Enum.Enum [ZebraPuzzle.Smoke]
+  = ZebraPuzzle.$fEnumSmoke
+instance [safe] GHC.Classes.Eq [ZebraPuzzle.Animal]
+  = ZebraPuzzle.$fEqAnimal
+instance [safe] GHC.Classes.Eq [ZebraPuzzle.Color]
+  = ZebraPuzzle.$fEqColor
+instance [safe] GHC.Classes.Eq [ZebraPuzzle.Drink]
+  = ZebraPuzzle.$fEqDrink
+instance [safe] GHC.Classes.Eq [ZebraPuzzle.Resident]
+  = ZebraPuzzle.$fEqResident
+instance [safe] GHC.Classes.Eq [ZebraPuzzle.Smoke]
+  = ZebraPuzzle.$fEqSmoke
+instance [safe] GHC.Classes.Eq [ZebraPuzzle.Solution]
+  = ZebraPuzzle.$fEqSolution
+instance [safe] GHC.Show.Show [ZebraPuzzle.Animal]
+  = ZebraPuzzle.$fShowAnimal
+instance [safe] GHC.Show.Show [ZebraPuzzle.Color]
+  = ZebraPuzzle.$fShowColor
+instance [safe] GHC.Show.Show [ZebraPuzzle.Drink]
+  = ZebraPuzzle.$fShowDrink
+instance [safe] GHC.Show.Show [ZebraPuzzle.Resident]
+  = ZebraPuzzle.$fShowResident
+instance [safe] GHC.Show.Show [ZebraPuzzle.Smoke]
+  = ZebraPuzzle.$fShowSmoke
+instance [safe] GHC.Show.Show [ZebraPuzzle.Solution]
+  = ZebraPuzzle.$fShowSolution
+"SPEC/ZebraPuzzle $fEq(,) @ Animal @ Smoke" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                       ZebraPuzzle.Animal)
+                                                            ($dEq1 :: GHC.Classes.Eq
+                                                                        ZebraPuzzle.Smoke)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Animal
+                      @ ZebraPuzzle.Smoke
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)2
+"SPEC/ZebraPuzzle $fEq(,) @ Color @ Color" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                      ZebraPuzzle.Color)
+                                                           ($dEq1 :: GHC.Classes.Eq
+                                                                       ZebraPuzzle.Color)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Color
+                      @ ZebraPuzzle.Color
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)5
+"SPEC/ZebraPuzzle $fEq(,) @ Color @ Resident" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         ZebraPuzzle.Color)
+                                                              ($dEq1 :: GHC.Classes.Eq
+                                                                          ZebraPuzzle.Resident)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Color
+                      @ ZebraPuzzle.Resident
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)6
+"SPEC/ZebraPuzzle $fEq(,) @ Drink @ Color" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                      ZebraPuzzle.Drink)
+                                                           ($dEq1 :: GHC.Classes.Eq
+                                                                       ZebraPuzzle.Color)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Drink
+                      @ ZebraPuzzle.Color
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)4
+"SPEC/ZebraPuzzle $fEq(,) @ Resident @ Animal" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                          ZebraPuzzle.Resident)
+                                                               ($dEq1 :: GHC.Classes.Eq
+                                                                           ZebraPuzzle.Animal)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Resident
+                      @ ZebraPuzzle.Animal
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)9
+"SPEC/ZebraPuzzle $fEq(,) @ Resident @ Color" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         ZebraPuzzle.Resident)
+                                                              ($dEq1 :: GHC.Classes.Eq
+                                                                          ZebraPuzzle.Color)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Resident
+                      @ ZebraPuzzle.Color
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)10
+"SPEC/ZebraPuzzle $fEq(,) @ Resident @ Drink" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         ZebraPuzzle.Resident)
+                                                              ($dEq1 :: GHC.Classes.Eq
+                                                                          ZebraPuzzle.Drink)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Resident
+                      @ ZebraPuzzle.Drink
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)8
+"SPEC/ZebraPuzzle $fEq(,) @ Resident @ Smoke" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         ZebraPuzzle.Resident)
+                                                              ($dEq1 :: GHC.Classes.Eq
+                                                                          ZebraPuzzle.Smoke)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Resident
+                      @ ZebraPuzzle.Smoke
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)7
+"SPEC/ZebraPuzzle $fEq(,) @ Smoke @ Animal" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                       ZebraPuzzle.Smoke)
+                                                            ($dEq1 :: GHC.Classes.Eq
+                                                                        ZebraPuzzle.Animal)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Smoke
+                      @ ZebraPuzzle.Animal
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)1
+"SPEC/ZebraPuzzle $fEq(,) @ Smoke @ Color" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                      ZebraPuzzle.Smoke)
+                                                           ($dEq1 :: GHC.Classes.Eq
+                                                                       ZebraPuzzle.Color)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Smoke
+                      @ ZebraPuzzle.Color
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)3
+"SPEC/ZebraPuzzle $fEq(,) @ Smoke @ Drink" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                      ZebraPuzzle.Smoke)
+                                                           ($dEq1 :: GHC.Classes.Eq
+                                                                       ZebraPuzzle.Drink)
+  GHC.Classes.$fEq(,) @ ZebraPuzzle.Smoke
+                      @ ZebraPuzzle.Drink
+                      $dEq
+                      $dEq1
+  = ZebraPuzzle.$s$fEq(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

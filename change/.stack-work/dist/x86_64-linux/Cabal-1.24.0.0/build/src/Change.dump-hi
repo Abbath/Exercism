@@ -1,0 +1,90 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-03 12:24:38.699604 UTC
+
+interface change-0.0.0-JEl0UxeSngKHtxFd7Rtba9:Change 8001
+  interface hash: d560b28e0d1135a310d1d321ffa3dc36
+  ABI hash: 084769add28249258104d4224f908d81
+  export-list hash: 547c4a40a0a231f4c473cbc02dc382d2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Change.findFewestCoins
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.Maybe 5f2ba364cbe65c060bc5436bc0b9d049
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 62c0e736506aac47ef40569f5b82e19d
+6ffe65cf009556e94747b6b1d5e37f88
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Change.$trModule2
+                   Change.$trModule1) -}
+33dc455b631d3a52390da3339d7ecae6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Change"#) -}
+74cd5f228702c91c6b85d8da8cd276e1
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "change-0.0.0-JEl0UxeSngKHtxFd7Rtba9"#) -}
+8d294406d436287edcdb43d7efa38c4b
+  findFewestCoins ::
+    GHC.Integer.Type.Integer
+    -> [GHC.Integer.Type.Integer]
+    -> GHC.Base.Maybe [GHC.Integer.Type.Integer]
+  {- Arity: 2, Strictness: <S,U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (target :: GHC.Integer.Type.Integer)
+                   (coins :: [GHC.Integer.Type.Integer]) ->
+                 Change.findFewestCoins_go
+                   target
+                   (Data.OldList.sortBy
+                      @ GHC.Integer.Type.Integer
+                      Change.findFewestCoins1
+                      coins)
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                   (GHC.Base.Nothing @ [GHC.Integer.Type.Integer])) -}
+1fc31c79c101ac7fe7ae3f69ee925d27
+  findFewestCoins1 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (x :: GHC.Integer.Type.Integer)
+                   (y :: GHC.Integer.Type.Integer) ->
+                 GHC.Integer.Type.compareInteger y x) -}
+7b387927ae95234359f681a4a5ebe030
+  findFewestCoins_go ::
+    GHC.Integer.Type.Integer
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> GHC.Base.Maybe [GHC.Integer.Type.Integer]
+    -> GHC.Base.Maybe [GHC.Integer.Type.Integer]
+  {- Arity: 4, Strictness: <S,U><L,U><L,U><S,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

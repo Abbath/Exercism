@@ -1,0 +1,19 @@
+Configuring hspec-expectations-0.7.2...
+Building hspec-expectations-0.7.2...
+Preprocessing library hspec-expectations-0.7.2...
+[1 of 3] Compiling Test.Hspec.Expectations.Contrib ( src/Test/Hspec/Expectations/Contrib.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Expectations/Contrib.o )
+[2 of 3] Compiling Test.Hspec.Expectations.Matcher ( src/Test/Hspec/Expectations/Matcher.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Expectations/Matcher.o )
+[3 of 3] Compiling Test.Hspec.Expectations ( src/Test/Hspec/Expectations.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Expectations.o )
+
+src/Test/Hspec/Expectations.hs:95:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Eq a
+    • In the type signature for:
+           compareWith :: (?loc::CallStack, Show a, Eq a) =>
+                          (a -> a -> Bool) -> String -> a -> a -> Expectation
+
+src/Test/Hspec/Expectations.hs:186:1: warning: [-Wincomplete-patterns]
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘errorCall’: Patterns not matched: _ _
+Installing library in
+/home/dan/.stack/snapshots/x86_64-linux/lts-7.16/8.0.1/lib/x86_64-linux-ghc-8.0.1/hspec-expectations-0.7.2-2hcUzmYSxY99w7X9aRVhtQ
+Registering hspec-expectations-0.7.2...

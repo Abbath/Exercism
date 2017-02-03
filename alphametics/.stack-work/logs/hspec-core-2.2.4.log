@@ -1,0 +1,24 @@
+Configuring hspec-core-2.2.4...
+Building hspec-core-2.2.4...
+Preprocessing library hspec-core-2.2.4...
+[ 1 of 18] Compiling Paths_hspec_core ( .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/autogen/Paths_hspec_core.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Paths_hspec_core.o )
+[ 2 of 18] Compiling Test.Hspec.Timer ( src/Test/Hspec/Timer.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Timer.o )
+[ 3 of 18] Compiling Test.Hspec.Compat ( src/Test/Hspec/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Compat.o )
+[ 4 of 18] Compiling Test.Hspec.Core.Util ( src/Test/Hspec/Core/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Util.o )
+[ 5 of 18] Compiling Test.Hspec.FailureReport ( src/Test/Hspec/FailureReport.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/FailureReport.o )
+[ 6 of 18] Compiling Test.Hspec.Core.QuickCheckUtil ( src/Test/Hspec/Core/QuickCheckUtil.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/QuickCheckUtil.o )
+[ 7 of 18] Compiling Test.Hspec.Core.Example ( src/Test/Hspec/Core/Example.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Example.o )
+[ 8 of 18] Compiling Test.Hspec.Core.Tree ( src/Test/Hspec/Core/Tree.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Tree.o )
+[ 9 of 18] Compiling Test.Hspec.Core.Spec.Monad ( src/Test/Hspec/Core/Spec/Monad.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Spec/Monad.o )
+[10 of 18] Compiling Test.Hspec.Core.Spec ( src/Test/Hspec/Core/Spec.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Spec.o )
+[11 of 18] Compiling Test.Hspec.Core.Hooks ( src/Test/Hspec/Core/Hooks.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Hooks.o )
+[12 of 18] Compiling Test.Hspec.Core.Formatters.Internal ( src/Test/Hspec/Core/Formatters/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Formatters/Internal.o )
+[13 of 18] Compiling Test.Hspec.Core.Formatters ( src/Test/Hspec/Core/Formatters.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Formatters.o )
+[14 of 18] Compiling Test.Hspec.Options ( src/Test/Hspec/Options.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Options.o )
+[15 of 18] Compiling Test.Hspec.Config ( src/Test/Hspec/Config.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Config.o )
+[16 of 18] Compiling Test.Hspec.Core.Runner.Eval ( src/Test/Hspec/Core/Runner/Eval.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Runner/Eval.o )
+[17 of 18] Compiling Test.Hspec.Core.Runner ( src/Test/Hspec/Core/Runner.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/Runner.o )
+[18 of 18] Compiling Test.Hspec.Core.QuickCheck ( src/Test/Hspec/Core/QuickCheck.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.0.0/build/Test/Hspec/Core/QuickCheck.o )
+Installing library in
+/home/dan/.stack/snapshots/x86_64-linux/lts-7.9/8.0.1/lib/x86_64-linux-ghc-8.0.1/hspec-core-2.2.4-HXQVi5z5vyHErDYB303in9
+Registering hspec-core-2.2.4...

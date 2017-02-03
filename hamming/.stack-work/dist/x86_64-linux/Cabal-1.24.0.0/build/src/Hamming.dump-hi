@@ -1,0 +1,87 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-01 12:18:00.480006 UTC
+
+interface hamming-0.0.0-HpID8gVWjp5JznYos4062n:Hamming 8001
+  interface hash: ab7dac5e758dd43413a3e201ebf77363
+  ABI hash: b9a0f399a70efc3c2f6cd3ff84c2ef14
+  export-list hash: f971678ba52bc35a5cb5e61ac8ca0ec0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Hamming.distance
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+48728d767fb7c752e0b0738bcd905c87
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Hamming.$trModule2
+                   Hamming.$trModule1) -}
+8974956b6e5ec242eb6c97bceaa1540c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Hamming"#) -}
+0e5021e43be43cdcb25a27453853fc93
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "hamming-0.0.0-HpID8gVWjp5JznYos4062n"#) -}
+a8bb5c597cd97765a1956c4bbc806b5e
+  distance ::
+    GHC.Classes.Eq a => [a] -> [a] -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U(A,1*U)><S,U><S,U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (a1 :: [a])
+                   (b :: [a]) ->
+                 case GHC.List.$wlenAcc @ a a1 0# of ww2 { DEFAULT ->
+                 case GHC.List.$wlenAcc @ a b 0# of ww1 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim./=# ww2 ww1) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.Just
+                        @ GHC.Types.Int
+                        (let {
+                           f :: a -> a -> GHC.Types.Bool = GHC.Classes./= @ a $dEq
+                         } in
+                         letrec {
+                           $wgo :: [a] -> [a] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                             {- Arity: 3, Strictness: <S,1*U><L,1*U><L,U>, Inline: [0] -}
+                           = \ (w :: [a]) (w1 :: [a]) (ww :: GHC.Prim.Int#) ->
+                             case w of wild1 {
+                               [] -> ww
+                               : ipv ipv1
+                               -> case w1 of wild2 {
+                                    [] -> ww
+                                    : ipv2 ipv3
+                                    -> case f ipv ipv2 of wild3 {
+                                         GHC.Types.False -> $wgo ipv1 ipv3 ww
+                                         GHC.Types.True -> $wgo ipv1 ipv3 (GHC.Prim.+# ww 1#) } } }
+                         } in
+                         case $wgo a1 b 0# of ww { DEFAULT -> GHC.Types.I# ww })
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Int } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
