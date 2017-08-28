@@ -1,0 +1,190 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-28 05:53:37.0988848 UTC
+
+interface acronym-1.0.0.2-6M3xmaB9J3sFJ9jMc8OkSn:Acronym 8002
+  interface hash: 08ee84a201b72ecb90bcfed1e4d58447
+  ABI hash: 9c6d7dfb358b0aa00e2aca4acb4d2580
+  export-list hash: a663afa1e9c8ac98db3593762a9917a5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 05c6dca22f9dd1832b6d5a0e6ea172a8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Acronym.abbreviate
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+92aeee6d4151a57c41964c0dc29832eb
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Acronym.$trModule2
+                   Acronym.$trModule1) -}
+491d7b46ac330e903a6baa7ea3a981a1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Acronym"#) -}
+cdf53d4836ea6b860725ad87c9880c3d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "acronym-1.0.0.2-6M3xmaB9J3sFJ9jMc8OkSn"#) -}
+95b7e1c08290b0bde3182cfded9dc378
+  abbreviate :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 Data.OldList.wordsFB
+                   @ [GHC.Types.Char]
+                   Acronym.abbreviate1
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   xs) -}
+bc8055dbc4d9f3258ceffc528bc46fdf
+  abbreviate1 ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: [GHC.Types.Char])
+                   (b2 :: [GHC.Types.Char])[OneShot] ->
+                 case x of wild {
+                   [] -> b2
+                   : ipv ipv1
+                   -> case (Acronym.abbreviate_go wild)
+                             `cast`
+                           (Data.Monoid.N:All[0]) of wild1 {
+                        GHC.Types.False
+                        -> case Data.OldList.isInfixOf
+                                  @ GHC.Types.Char
+                                  GHC.Classes.$fEqChar
+                                  Acronym.abbreviate3
+                                  wild of wild2 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Types.Char
+                                  (GHC.Unicode.toUpper ipv)
+                                  (letrec {
+                                     go :: [GHC.Types.Char] -> [GHC.Types.Char]
+                                       {- Arity: 1, Strictness: <S,1*U> -}
+                                     = \ (ds :: [GHC.Types.Char]) ->
+                                       case ds of wild3 {
+                                         [] -> b2
+                                         : y ys
+                                         -> case y of wild4 { GHC.Types.C# c# ->
+                                            case {__pkg_ccall base-4.9.1.0 u_iswalpha GHC.Prim.Int#
+                                                                                      -> GHC.Prim.State#
+                                                                                           GHC.Prim.RealWorld
+                                                                                      -> (# GHC.Prim.State#
+                                                                                              GHC.Prim.RealWorld,
+                                                                                            GHC.Prim.Int# #)}
+                                                   (GHC.Prim.ord# c#)
+                                                   GHC.Prim.realWorld# of wild5 { (#,#) ds1 ds2 ->
+                                            case ds2 of wild6 {
+                                              DEFAULT
+                                              -> case {__pkg_ccall base-4.9.1.0 u_iswupper GHC.Prim.Int#
+                                                                                           -> GHC.Prim.State#
+                                                                                                GHC.Prim.RealWorld
+                                                                                           -> (# GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld,
+                                                                                                 GHC.Prim.Int# #)}
+                                                        (GHC.Prim.ord# c#)
+                                                        GHC.Prim.realWorld# of wild7 { (#,#) ds3 ds4 ->
+                                                 case ds4 of wild8 {
+                                                   DEFAULT
+                                                   -> GHC.Types.:
+                                                        @ GHC.Types.Char
+                                                        (case {__pkg_ccall base-4.9.1.0 u_towupper GHC.Prim.Int#
+                                                                                                   -> GHC.Prim.State#
+                                                                                                        GHC.Prim.RealWorld
+                                                                                                   -> (# GHC.Prim.State#
+                                                                                                           GHC.Prim.RealWorld,
+                                                                                                         GHC.Prim.Int# #)}
+                                                                (GHC.Prim.ord# c#)
+                                                                GHC.Prim.realWorld# of wild9 { (#,#) ds5 ds6 ->
+                                                         case GHC.Prim.tagToEnum#
+                                                                @ GHC.Types.Bool
+                                                                (GHC.Prim.leWord#
+                                                                   (GHC.Prim.int2Word# ds6)
+                                                                   1114111##) of wild10 {
+                                                           GHC.Types.False -> GHC.Char.chr2 ds6
+                                                           GHC.Types.True
+                                                           -> GHC.Types.C# (GHC.Prim.chr# ds6) } })
+                                                        (go ys)
+                                                   0# -> go ys } }
+                                              0# -> go ys } } } }
+                                   } in
+                                   go ipv1)
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Types.Char
+                                  (GHC.Unicode.toUpper ipv)
+                                  (GHC.Types.:
+                                     @ GHC.Types.Char
+                                     (case GHC.List.dropWhile
+                                             @ GHC.Types.Char
+                                             Acronym.abbreviate2
+                                             wild of wild3 {
+                                        [] -> case GHC.List.scanl2 ret_ty GHC.Types.Char of {}
+                                        : ds1 xs
+                                        -> case xs of wild4 {
+                                             [] -> case GHC.List.badHead ret_ty GHC.Types.Char of {}
+                                             : x1 ds2
+                                             -> case x1 of ww { GHC.Types.C# ww1 ->
+                                                case {__pkg_ccall base-4.9.1.0 u_towupper GHC.Prim.Int#
+                                                                                          -> GHC.Prim.State#
+                                                                                               GHC.Prim.RealWorld
+                                                                                          -> (# GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld,
+                                                                                                GHC.Prim.Int# #)}
+                                                       (GHC.Prim.ord# ww1)
+                                                       GHC.Prim.realWorld# of wild5 { (#,#) ds ds3 ->
+                                                case GHC.Prim.tagToEnum#
+                                                       @ GHC.Types.Bool
+                                                       (GHC.Prim.leWord#
+                                                          (GHC.Prim.int2Word# ds3)
+                                                          1114111##) of wild6 {
+                                                  GHC.Types.False -> GHC.Char.chr2 ds3
+                                                  GHC.Types.True
+                                                  -> GHC.Types.C# (GHC.Prim.chr# ds3) } } } } })
+                                     b2) }
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             (GHC.Unicode.toUpper ipv)
+                             b2 } }) -}
+1046c50a541afb9439232c85574a96fe
+  abbreviate2 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Char) ->
+                 case ds of wild { GHC.Types.C# x ->
+                 case x of wild1 {
+                   DEFAULT -> GHC.Types.True '-'# -> GHC.Types.False } }) -}
+2c8a1268e3b73a75fb975e9460ccaae7
+  abbreviate3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-"#) -}
+768b8803f9073440d2267d180d0c70d3
+  abbreviate_go :: [GHC.Types.Char] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,67 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-28 07:28:51.705025603 UTC
+
+interface spiral-matrix-1.0.0.1-89OP2UjOz6fCKHalmcS2yD:Spiral 8002
+  interface hash: 32f1ef956def3efff012128441326cab
+  ABI hash: 4d6a2f1f9f697589ac53ad203cc80659
+  export-list hash: 2f93be149d11bb6e2b12473222eadbb6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 05c6dca22f9dd1832b6d5a0e6ea172a8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Spiral.spiral
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:Data.Tuple 7dc4bbb45d2e69c991ffac438beeca11
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+a7a6e020183ddacedd5f7af5004bc54f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Spiral.$trModule2
+                   Spiral.$trModule1) -}
+903bcc7a2bfcd9d40eab9ee5b0c4492d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Spiral"#) -}
+af023dec9dfafe4d2e00596770e2fd2f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "spiral-matrix-1.0.0.1-89OP2UjOz6fCKHalmcS2yD"#) -}
+5be44673c402247194d4ed5723dbf850
+  $wspiral :: GHC.Prim.Int# -> [[GHC.Types.Int]]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+3a06c015373d97b4a869493fa13b7565
+  spiral :: GHC.Types.Int -> [[GHC.Types.Int]]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Spiral.$wspiral ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
